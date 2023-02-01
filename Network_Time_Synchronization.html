@@ -253,13 +253,13 @@
 <p><b>1.</b> On the host (<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: <code>dom0</code>), run the following command to report the time in UTC.
 </p><p></p><div class="code-select">date -u</div>
 <p>The output should be similar to the following. <sup class="reference" id="cite_ref-9"><a href="#cite_note-9">[9]</a></sup>
-</p><p></p><div class="code-select">Jan 31 00:27:44 UTC 2023</div>
+</p><p></p><div class="code-select">Feb 01 00:49:44 UTC 2023</div>
 <p><b>2.</b> Set the correct time in Whonix-Gateway ™ (<code>sys-whonix</code>).
 </p><p>Run the following command with the correct date and time parameters. <sup class="reference" id="cite_ref-10"><a href="#cite_note-10">[10]</a></sup> <sup class="reference" id="cite_ref-11"><a href="#cite_note-11">[11]</a></sup>
 </p>
 <ul><li><code>clock-random-manual-gui</code>: a randomized clock setting (in UTC) is entered via a GUI.</li>
 <li><code>clock-random-manual-cli</code>: a randomized clock setting (in UTC) is entered on the command line. For example <sup class="reference" id="cite_ref-12"><a href="#cite_note-12">[12]</a></sup>:</li></ul>
-<p></p><div class="code-select">echo "Jan 31 00:27:44 UTC 2023" | sudo clock-random-manual-cli</div>
+<p></p><div class="code-select">echo "Feb 01 00:49:44 UTC 2023" | sudo clock-random-manual-cli</div>
 <p><b>3.</b> Restart sdwdate.
 </p><p></p><div class="code-select">sudo service sdwdate restart</div>
 <p><b>4.</b> If Tor is still not functional, try restarting Tor.
