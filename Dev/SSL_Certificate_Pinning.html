@@ -242,9 +242,9 @@ https://github.com/Whonix/Whonix/issues/24
 <pre>sudo apt install ca-certificates curl
 </pre>
 <p>Test, expected to work.
-</p><p><span class="code-select">curl --verbose --tlsv1.3 --proto =https --capath /invalid/ --cacert /usr/share/ca-certificates/mozilla/DigiCert_High_Assurance_EV_Root_CA.crt https://check.torproject.org</span>
+</p><p><span class="code-select">curl --verbose --tlsv1.3 --capath /invalid/ --cacert /usr/share/ca-certificates/mozilla/DigiCert_High_Assurance_EV_Root_CA.crt https://check.torproject.org</span>
 </p><p>Test, expected to fail.
-</p><p><span class="code-select">curl --verbose --tlsv1.3 --proto =https --capath /invalid/ --cacert /usr/share/ca-certificates/mozilla/AddTrust_External_Root.crt https://check.torproject.org</span>
+</p><p><span class="code-select">curl --verbose --tlsv1.3 --capath /invalid/ --cacert /usr/share/ca-certificates/mozilla/AddTrust_External_Root.crt https://check.torproject.org</span>
 </p>
 <h2><span class="mw-headline" id="PIN_Certificate_Directly">PIN Certificate Directly</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Dev/SSL_Certificate_Pinning&amp;action=edit&amp;section=6" href="https://www.whonix.org/w/index.php?title=Dev/SSL_Certificate_Pinning&amp;action=edit&amp;section=6.html" title="Edit section: PIN Certificate Directly">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
 <h3><span class="mw-headline" id="curl_method">curl method</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Dev/SSL_Certificate_Pinning&amp;action=edit&amp;section=7" href="https://www.whonix.org/w/index.php?title=Dev/SSL_Certificate_Pinning&amp;action=edit&amp;section=7.html" title="Edit section: curl method">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
@@ -295,7 +295,7 @@ https://github.com/Whonix/Whonix/issues/24
 <p>Download with curl and the pinned certificate:
 </p><p><b>Broken!</b>
 </p><p>This needs curl 7.39.0 or above, because older versions do not support --pinnedpubkey.
-</p><p><span class="code-select">curl --tlsv1.3 --proto =https --cacert ./torproject.pem https://check.torproject.org/ &gt; check.html</span>
+</p><p><span class="code-select">curl --tlsv1.3 --cacert ./torproject.pem https://check.torproject.org/ &gt; check.html</span>
 </p><p>Eventually undo.
 </p>
 <pre>sudo mv /usr/share/ca-certificates_ /usr/share/ca-certificates

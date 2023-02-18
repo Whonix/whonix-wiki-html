@@ -363,12 +363,12 @@ Primary key fingerprint: 6899 5C53 D2CE E11B 0E41  82F6 2146 D0CD 2B3C AA3E
 </p>
 <h3><span class="mw-headline" id="JonDonym_HTTPS_Proxy_Test">JonDonym HTTPS Proxy Test</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=JonDonym&amp;action=edit&amp;section=14" href="https://www.whonix.org/w/index.php?title=JonDonym&amp;action=edit&amp;section=14.html" title="Edit section: JonDonym HTTPS Proxy Test">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
 <p>This also works with JonDonym free accounts.
-</p><p><span class="code-select">UWT_DEV_PASSTHROUGH=1 curl --tlsv1.3 --proto =https --proxytunnel --proxy 127.0.0.1:4001 https://check.torproject.org</span>
+</p><p><span class="code-select">UWT_DEV_PASSTHROUGH=1 curl --tlsv1.3 --proxytunnel --proxy 127.0.0.1:4001 https://check.torproject.org</span>
 </p>
 <h3><span class="mw-headline" id="JonDonym_SOCKS_Proxy_Test">JonDonym SOCKS Proxy Test</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=JonDonym&amp;action=edit&amp;section=15" href="https://www.whonix.org/w/index.php?title=JonDonym&amp;action=edit&amp;section=15.html" title="Edit section: JonDonym SOCKS Proxy Test">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
 <p>This requires a JonDonym premium (paid) account.
 </p><p>Try this test command.
-<span class="code-select">UWT_DEV_PASSTHROUGH=1 curl --tlsv1.3 --proto =https --socks5-hostname socks5h://127.0.0.1:4001 https://check.torproject.org</span>
+<span class="code-select">UWT_DEV_PASSTHROUGH=1 curl --tlsv1.3 --socks5-hostname socks5h://127.0.0.1:4001 https://check.torproject.org</span>
 </p><p>If the following message appears, it indicates the local JonDo has not opened a listener. Check if JonDonym has been started or configured to use a non-default port.
 </p>
 <pre>curl: (7) couldn't connect to host
@@ -411,7 +411,7 @@ Primary key fingerprint: 6899 5C53 D2CE E11B 0E41  82F6 2146 D0CD 2B3C AA3E
 </p><p><b>2.</b> Install JonDonym in the new <code>JonDo-Gateway</code> ProxyVM.
 </p><p>Follow <a class="external text" data-href="https://anonymous-proxy-servers.net/en/help/firststeps2.html" href="https://anonymous-proxy-servers.net/en/help/firststeps2.html" rel="noreferrer noopener" target="_blank">these instructions</a><sup class="ext-link-to-archive.html" title="Link to archived version"><a data-href="https://web.archive.org/web/https://anonymous-proxy-servers.net/en/help/firststeps2.html" href="https://web.archive.org/web/https://anonymous-proxy-servers.net/en/help/firststeps2.html" rel="noreferrer noopener" target="_blank"><img alt="archive.org" data-src="/w/images/7/73/Internet_Archive_logo.png" decoding="async" height="15" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAoCAYAAAB0HkOaAAACjUlEQVRYhc2YPW8TQRCGH39BfIZgGwICBEh8lkiUQElLgQQdoqJJRZm/EDqgowWJgoKGgoLfQAkIhUgoDcTYkIg4FsZgir3Ds3tzez7b5DLSyrvz7M28O3de77nE5FYCrgCLwF1gHvgMdKeImclqwHXgcZh4qLS3wDJwFSjMWsBp4B7wGviZICCptYAnwC1M5TJbGbOqZeB9xuS+1gsXtARc8AlYAO4Az4HNGQrwtVXgIXANqERC5oA3OyRAa3+AmzB6wOrAGV/p/qP1gHdSTAXYm5OYIc52sER+t+mfkHL4uQmszXK5GWw7p7x+kztkGTgLNIABsI5drULIm+G4A3x04h0GjgMBsAF8wn4eGsAJYD/wI4y/oQm7Qfx+1gW/pPCLTgx3k7zv8JcOfyFhUfQXFIGHMnAwlfFxN4bFi0lA8aXxEnYlAQ5mGRc9E7OKaTrxtGu8Y3lxQ0kmfe6qx+FN0S8CBzzcElNTgtVSeCD6+1J4QPx8Uwb2jCsmSOHSF0zALf+0lZmWW34pZpKVSV5V+JzIofFEMSVl4rS8wOg50bgVQwYbKhOHU3LpT+O7V0xfmdjPwH8pfCCSadzySzHay1dP9LVzRzeFb6dwy1/UnBMm0xaTxi2/FLOVEkzj3YT+uDx6n4qJ6SiT26L/TeGdhL52fR9zoJL2HfitiWkTt68Jfc3XJv6NcWN6x2li2hn4gPgR0l2AdyzFtJRkcvJ6CtdiZOLyJ70KnAOOYR6qFuZMG1kFOA8cxdyOL8AHTEUiO4k5cM9jqraCXa0jmH816qF/VRG4OyyqzGXgWY46FoFX0RtlFTiVo5gajF5v14BH+WlhJcfcuhWAB8DtvIUAT8uYLVrbXXfatv4CWncb4zb4QjwAAAAASUVORK5CYII=" width="13"/></a></sup> to install JonDonym from JonDonymn's Debian APT repository. The <i><span style="background-color:#FBFBFB">Using the repository at command line</span></i> chapter is recommended for installation.
 </p><p><b>3.</b> Test if JonDonym's https proxy is functional.
-</p><p><span class="code-select">curl --tlsv1.3 --proto =https --proxytunnel --proxy 127.0.0.1:4001 https://check.torproject.org</span>
+</p><p><span class="code-select">curl --tlsv1.3 --proxytunnel --proxy 127.0.0.1:4001 https://check.torproject.org</span>
 </p><p><sup class="reference" id="cite_ref-26"><a href="#cite_note-26">[26]</a></sup>
 </p><p><b>4.</b> Enable the extended view.
 </p>
@@ -579,7 +579,7 @@ Configuration was valid</pre>
 </div>
 </div>
 <p><b>11.</b> In <code>sys-whonix</code>, test if Tor is able to use the https proxy that JonDonym is providing.
-</p><p><span class="code-select">UWT_DEV_PASSTHROUGH=1 curl --tlsv1.3 --proto =https --socks5-hostname socks5h://127.0.0.1:9050 https://check.torproject.org</span>
+</p><p><span class="code-select">UWT_DEV_PASSTHROUGH=1 curl --tlsv1.3 --socks5-hostname socks5h://127.0.0.1:9050 https://check.torproject.org</span>
 </p><p>The procedure is complete and Tor will use JonDonym as a proxy.
 </p>
 </div>
@@ -679,7 +679,7 @@ The motivation behind this is better security. JonDonym is not installable from 
 <li id="cite_note-26"><span class="mw-cite-backlink"><a href="#cite_ref-26">↑</a></span> <span class="reference-text">
 Socks proxy test - premium accounts only.
 
-<span class="code-select">curl --tlsv1.3 --proto =https --socks5-hostname socks5h://127.0.0.1:4001 https://check.torproject.org</span>
+<span class="code-select">curl --tlsv1.3 --socks5-hostname socks5h://127.0.0.1:4001 https://check.torproject.org</span>
 </span>
 </li>
 </ol></div></div>
