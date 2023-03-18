@@ -229,8 +229,8 @@ a.freelink
 </p><p><span class="code-select">sudo apt update &amp;&amp; sudo apt install git</span>
 </p><p><br/>
 Get the source code including git submodules. <sup class="reference" id="cite_ref-2"><a href="#cite_note-2">[2]</a></sup> <sup class="reference" id="cite_ref-3"><a href="#cite_note-3">[3]</a></sup>
-</p><p>Note: Replace <code>16.0.9.0-stable</code> with the actual tag you want to build.
-</p><p><span class="code-select">git clone --depth=1 --branch 16.0.9.0-stable --jobs=4 --recurse-submodules --shallow-submodules https://github.com/Whonix/derivative-maker.git</span>
+</p><p>Note: Replace <code>16.0.9.8-stable</code> with the actual tag you want to build.
+</p><p><span class="code-select">git clone --depth=1 --branch 16.0.9.8-stable --jobs=4 --recurse-submodules --shallow-submodules https://github.com/Whonix/derivative-maker.git</span>
 </p>
 <h3><span class="mw-headline" id="Change_Directory">Change Directory</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Dev/Build_Documentation/Upgrading_Derivative_Deb_Packages_from_Source_Code&amp;action=edit&amp;section=6" href="https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/Upgrading_Derivative_Deb_Packages_from_Source_Code&amp;action=edit&amp;section=6.html" title="Edit section: Change Directory">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
 <p>Get into the <code>Whonix</code> source code folder because later on package build commands using <code>./derivative-maker</code> are expected to be run from the root of the source folder.
@@ -243,12 +243,12 @@ Get the source code including git submodules. <sup class="reference" id="cite_re
 </p><p>Git fetch. <sup class="reference" id="cite_ref-4"><a href="#cite_note-4">[4]</a></sup>
 </p><p><span class="code-select">git fetch</span>
 </p><p>Verify the chosen tag to build. Replace with tag you want to build.
-</p><p><span class="code-select">git verify-tag 16.0.9.0-stable</span>
+</p><p><span class="code-select">git verify-tag 16.0.9.8-stable</span>
 </p><p>The output should look similar to this.
 </p>
 <div class="pre">object 1844108109a5f2f8bddcf2257b9f3675be5cfb22
 <p>type commit
-tag 16.0.9.0
+tag 16.0.9.8
 tagger Patrick Schleizer &lt;adrelanos@whonix.org&gt; 1392320095 +0000
 </p><p>.
 gpg: Signature made Thu 13 Feb 2014 07:34:55 PM UTC using RSA key ID 77BB3C48
@@ -263,8 +263,8 @@ gpg: Good signature from "Patrick Schleizer &lt;adrelanos@whonix.org&gt;" [ultim
 <div class="pre">gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.</div>
 <p>Is explained on the <a data-href="/wiki/Signing_Key" href="../../Signing_Key.html" title="Signing Key">Whonix ™ Signing Key</a> page and can be safely ignored.
-</p><p>By convention, git tags should point to signed git commits. <sup class="reference" id="cite_ref-6"><a href="#cite_note-6">[6]</a></sup> (<a class="external text" data-href="https://forums.whonix.org/t/security-git-general-verification-verifying-whonix-submodules/513" href="https://forums.whonix.org/t/security-git-general-verification-verifying-whonix-submodules/513" rel="noreferrer noopener" target="_blank">forum discussion</a><sup class="ext-link-to-archive.html" title="Link to archived version"><a data-href="https://web.archive.org/web/https://forums.whonix.org/t/security-git-general-verification-verifying-whonix-submodules/513" href="https://web.archive.org/web/https://forums.whonix.org/t/security-git-general-verification-verifying-whonix-submodules/513" rel="noreferrer noopener" target="_blank"><img alt="archive.org" data-src="/w/images/7/73/Internet_Archive_logo.png" decoding="async" height="15" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAoCAYAAAB0HkOaAAACjUlEQVRYhc2YPW8TQRCGH39BfIZgGwICBEh8lkiUQElLgQQdoqJJRZm/EDqgowWJgoKGgoLfQAkIhUgoDcTYkIg4FsZgir3Ds3tzez7b5DLSyrvz7M28O3de77nE5FYCrgCLwF1gHvgMdKeImclqwHXgcZh4qLS3wDJwFSjMWsBp4B7wGviZICCptYAnwC1M5TJbGbOqZeB9xuS+1gsXtARc8AlYAO4Az4HNGQrwtVXgIXANqERC5oA3OyRAa3+AmzB6wOrAGV/p/qP1gHdSTAXYm5OYIc52sER+t+mfkHL4uQmszXK5GWw7p7x+kztkGTgLNIABsI5drULIm+G4A3x04h0GjgMBsAF8wn4eGsAJYD/wI4y/oQm7Qfx+1gW/pPCLTgx3k7zv8JcOfyFhUfQXFIGHMnAwlfFxN4bFi0lA8aXxEnYlAQ5mGRc9E7OKaTrxtGu8Y3lxQ0kmfe6qx+FN0S8CBzzcElNTgtVSeCD6+1J4QPx8Uwb2jCsmSOHSF0zALf+0lZmWW34pZpKVSV5V+JzIofFEMSVl4rS8wOg50bgVQwYbKhOHU3LpT+O7V0xfmdjPwH8pfCCSadzySzHay1dP9LVzRzeFb6dwy1/UnBMm0xaTxi2/FLOVEkzj3YT+uDx6n4qJ6SiT26L/TeGdhL52fR9zoJL2HfitiWkTt68Jfc3XJv6NcWN6x2li2hn4gPgR0l2AdyzFtJRkcvJ6CtdiZOLyJ70KnAOOYR6qFuZMG1kFOA8cxdyOL8AHTEUiO4k5cM9jqraCXa0jmH816qF/VRG4OyyqzGXgWY46FoFX0RtlFTiVo5gajF5v14BH+WlhJcfcuhWAB8DtvIUAT8uYLVrbXXfatv4CWncb4zb4QjwAAAAASUVORK5CYII=" width="13"/></a></sup>) It is advisable to verify the signature of the git commit as well (replace <code>16.0.9.0</code> with the actual git tag being verified).
-</p><p><span class="code-select">git verify-commit 16.0.9.0-stable^{commit}</span>
+</p><p>By convention, git tags should point to signed git commits. <sup class="reference" id="cite_ref-6"><a href="#cite_note-6">[6]</a></sup> (<a class="external text" data-href="https://forums.whonix.org/t/security-git-general-verification-verifying-whonix-submodules/513" href="https://forums.whonix.org/t/security-git-general-verification-verifying-whonix-submodules/513" rel="noreferrer noopener" target="_blank">forum discussion</a><sup class="ext-link-to-archive.html" title="Link to archived version"><a data-href="https://web.archive.org/web/https://forums.whonix.org/t/security-git-general-verification-verifying-whonix-submodules/513" href="https://web.archive.org/web/https://forums.whonix.org/t/security-git-general-verification-verifying-whonix-submodules/513" rel="noreferrer noopener" target="_blank"><img alt="archive.org" data-src="/w/images/7/73/Internet_Archive_logo.png" decoding="async" height="15" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAoCAYAAAB0HkOaAAACjUlEQVRYhc2YPW8TQRCGH39BfIZgGwICBEh8lkiUQElLgQQdoqJJRZm/EDqgowWJgoKGgoLfQAkIhUgoDcTYkIg4FsZgir3Ds3tzez7b5DLSyrvz7M28O3de77nE5FYCrgCLwF1gHvgMdKeImclqwHXgcZh4qLS3wDJwFSjMWsBp4B7wGviZICCptYAnwC1M5TJbGbOqZeB9xuS+1gsXtARc8AlYAO4Az4HNGQrwtVXgIXANqERC5oA3OyRAa3+AmzB6wOrAGV/p/qP1gHdSTAXYm5OYIc52sER+t+mfkHL4uQmszXK5GWw7p7x+kztkGTgLNIABsI5drULIm+G4A3x04h0GjgMBsAF8wn4eGsAJYD/wI4y/oQm7Qfx+1gW/pPCLTgx3k7zv8JcOfyFhUfQXFIGHMnAwlfFxN4bFi0lA8aXxEnYlAQ5mGRc9E7OKaTrxtGu8Y3lxQ0kmfe6qx+FN0S8CBzzcElNTgtVSeCD6+1J4QPx8Uwb2jCsmSOHSF0zALf+0lZmWW34pZpKVSV5V+JzIofFEMSVl4rS8wOg50bgVQwYbKhOHU3LpT+O7V0xfmdjPwH8pfCCSadzySzHay1dP9LVzRzeFb6dwy1/UnBMm0xaTxi2/FLOVEkzj3YT+uDx6n4qJ6SiT26L/TeGdhL52fR9zoJL2HfitiWkTt68Jfc3XJv6NcWN6x2li2hn4gPgR0l2AdyzFtJRkcvJ6CtdiZOLyJ70KnAOOYR6qFuZMG1kFOA8cxdyOL8AHTEUiO4k5cM9jqraCXa0jmH816qF/VRG4OyyqzGXgWY46FoFX0RtlFTiVo5gajF5v14BH+WlhJcfcuhWAB8DtvIUAT8uYLVrbXXfatv4CWncb4zb4QjwAAAAASUVORK5CYII=" width="13"/></a></sup>) It is advisable to verify the signature of the git commit as well (replace <code>16.0.9.8</code> with the actual git tag being verified).
+</p><p><span class="code-select">git verify-commit 16.0.9.8-stable^{commit}</span>
 </p><p>The output should look similar to this.
 </p>
 <div class="pre">commit 5aa1c307c943be60e7d2bfa5727fa5ada3a79c4a
@@ -278,8 +278,8 @@ Date:   Sun Dec 7 01:22:22 2014 +0000
 <p>Retrieve a list of available git tags.
 </p><p><span class="code-select">git --no-pager tag</span>
 </p><p>Use <i>git checkout</i> to select the preferred version to build.
-</p><p>Note: Replace <code>16.0.9.0-stable</code> with the actual tag you want to build.
-</p><p><span class="code-select">git checkout --recurse-submodules 16.0.9.0-stable</span>
+</p><p>Note: Replace <code>16.0.9.8-stable</code> with the actual tag you want to build.
+</p><p><span class="code-select">git checkout --recurse-submodules 16.0.9.8-stable</span>
 </p>
 <h3><span class="mw-headline" id="Check_Git">Check Git</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Dev/Build_Documentation/Upgrading_Derivative_Deb_Packages_from_Source_Code&amp;action=edit&amp;section=9" href="https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/Upgrading_Derivative_Deb_Packages_from_Source_Code&amp;action=edit&amp;section=9.html" title="Edit section: Check Git">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
 <p>Check if you really got the version you want.
@@ -359,7 +359,7 @@ nothing to commit, working tree clean</div>
 Optional <code>git</code> parameters:
 
 <ul><li><code>--depth=1</code>: Used to speed up download.</li>
-<li><code>--branch 16.0.9.0-stable</code> Usability. Used to speed up download.</li>
+<li><code>--branch 16.0.9.8-stable</code> Usability. Used to speed up download.</li>
 <li><code>--jobs=4</code>: Used to speed up download.</li>
 <li><code>--recurse-submodules --shallow-submodules</code>: Usability.</li></ul>
 
@@ -368,7 +368,7 @@ Knowledgeable <code>git</code> users are free to drop any of these optional para
 <li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text">
 Alternatively, this can be achieved with the following commands in several steps. This is useful if network issues arise.
 
-<span class="code-select">git clone --depth=1 --branch 16.0.9.0-stable https://github.com/Whonix/derivative-maker.git</span>
+<span class="code-select">git clone --depth=1 --branch 16.0.9.8-stable https://github.com/Whonix/derivative-maker.git</span>
 <span class="code-select">cd derivative-maker</span>
 <span class="code-select">git submodule update --init --recursive --progress --jobs=4</span>
 </span>
