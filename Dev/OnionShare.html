@@ -219,6 +219,10 @@ Developers only! Risk of <a data-href='/wiki/Tips_on_Remaining_Anonymous#Refrain
 <span class="code-select">flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo</span>
 </p><p><b>3.</b> Install the flatpak <code>onionshare</code> package.
 <span class="code-select">flatpak install flathub onionshare</span>
+</p><p><b>4.</b> Done.
+</p><p>The procedure of installing <code>onionshare</code> is complete.
+</p><p><b>5.</b> Upgrades notice.
+</p><p><u>Note</u>: this procedure will not keep the software up-to-date. How to update installation installed by flatpak is also documented on the <a class="mw-redirect" data-href="/wiki/Operating_System_Software_and_Updates" href="../Operating_System_Software_and_Updates.html" title="Operating System Software and Updates">Operating System Software and Updates</a> wiki page.
 </p>
 </div>
 <div data-tcc-id="flatpak-install" data-tcc-title="B : Qubes-Whonix ™ Template">
@@ -227,6 +231,10 @@ Developers only! Risk of <a data-href='/wiki/Tips_on_Remaining_Anonymous#Refrain
 <span class="code-select">http_proxy=http://127.0.0.1:8082 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo</span>
 </p><p><b>3.</b> Install the flatpak <code>onionshare</code> package.
 <span class="code-select">http_proxy=http://127.0.0.1:8082 flatpak install flathub onionshare</span>
+</p><p><b>4.</b> Done.
+</p><p>The procedure of installing <code>onionshare</code> is complete.
+</p><p><b>5.</b> Upgrades notice.
+</p><p><u>Note</u>: this procedure will not keep the software up-to-date. How to update installation installed by flatpak is also documented on the <a class="mw-redirect" data-href="/wiki/Operating_System_Software_and_Updates" href="../Operating_System_Software_and_Updates.html" title="Operating System Software and Updates">Operating System Software and Updates</a> wiki page.
 </p>
 </div>
 <div data-tcc-id="flatpak-install" data-tcc-title="C : Qubes-Whonix ™ App Qube">
@@ -235,13 +243,12 @@ Developers only! Risk of <a data-href='/wiki/Tips_on_Remaining_Anonymous#Refrain
 <span class="code-select">flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo</span>
 </p><p><b>3.</b> Install the flatpak <code>onionshare</code> package.
 <span class="code-select">flatpak --user install flathub onionshare</span>
-</p>
-</div>
-<p><b>4.</b> Done.
+</p><p><b>4.</b> Done.
 </p><p>The procedure of installing <code>onionshare</code> is complete.
 </p><p><b>5.</b> Upgrades notice.
 </p><p><u>Note</u>: this procedure will not keep the software up-to-date. How to update installation installed by flatpak is also documented on the <a class="mw-redirect" data-href="/wiki/Operating_System_Software_and_Updates" href="../Operating_System_Software_and_Updates.html" title="Operating System Software and Updates">Operating System Software and Updates</a> wiki page.
 </p>
+</div>
 </div>
 <h2><span class="mw-headline" id="Issue">Issue</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Dev/OnionShare&amp;action=edit&amp;section=3" href="https://www.whonix.org/w/index.php?title=Dev/OnionShare&amp;action=edit&amp;section=3.html" title="Edit section: Issue">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
 <p>Flatpak installed OnionShare does not listen on all network interfaces but 127.0.0.1 only. It is therefore unreachable from Whonix-Gateway ™. This is because file <code>/usr/share/anon-ws-base-files/workstation</code> does not exist inside the Flatpak folder.
