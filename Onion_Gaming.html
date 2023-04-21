@@ -231,14 +231,26 @@
 <h2><span id="Whonix_.E2.84.A2_Gateway_Virtualbox_Configuration"></span><span class="mw-headline" id="Whonix_™_Gateway_Virtualbox_Configuration">Whonix ™ Gateway Virtualbox Configuration</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Onion_Gaming&amp;action=edit&amp;section=5" href="https://www.whonix.org/w/index.php?title=Onion_Gaming&amp;action=edit&amp;section=5.html" title="Edit section: Whonix ™ Gateway Virtualbox Configuration">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
 <p>Open up a terminal and type.
 </p><p>Open file <code>/usr/local/etc/torrc.d/50_user.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /usr/local/etc/torrc.d/50_user.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p>Then type your password. If it has not changed, the original is “changeme”.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /usr/local/etc/torrc.d/50_user.conf</span>
+</p>
+</div>
+<p><br/>
+Then type your password. If it has not changed, the original is “changeme”.
 </p><p>Next, modify the file as follows.
 </p>
 <pre>HiddenServiceDir /var/lib/tor/hidden_service/
@@ -266,14 +278,26 @@ DisableNetwork 0
 <h2><span id="Whonix_.E2.84.A2_Workstation_VirtualBox_Configuration"></span><span class="mw-headline" id="Whonix_™_Workstation_VirtualBox_Configuration">Whonix ™ Workstation VirtualBox Configuration</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Onion_Gaming&amp;action=edit&amp;section=6" href="https://www.whonix.org/w/index.php?title=Onion_Gaming&amp;action=edit&amp;section=6.html" title="Edit section: Whonix ™ Workstation VirtualBox Configuration">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
 <p>Open a terminal and run.
 </p><p>Open file <code>/etc/whonix_firewall.d/50_user.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /etc/whonix_firewall.d/50_user.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p>Enter the password if a prompt appears.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /etc/whonix_firewall.d/50_user.conf</span>
+</p>
+</div>
+<p><br/>
+Enter the password if a prompt appears.
 </p><p>Add the following line.
 </p>
 <pre>EXTERNAL_OPEN_PORTS+=" 2000 "
@@ -294,14 +318,26 @@ DisableNetwork 0
 <h2><span id="Whonix_.E2.84.A2_Gateway_VirtualBox_Configuration_2"></span><span class="mw-headline" id="Whonix_™_Gateway_VirtualBox_Configuration_2">Whonix ™ Gateway VirtualBox Configuration</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Onion_Gaming&amp;action=edit&amp;section=8" href="https://www.whonix.org/w/index.php?title=Onion_Gaming&amp;action=edit&amp;section=8.html" title="Edit section: Whonix ™ Gateway VirtualBox Configuration">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
 <p>Open up a terminal and run (enter the password if prompted).
 </p><p>Open file <code>/usr/local/etc/torrc.d/50_user.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /usr/local/etc/torrc.d/50_user.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p>Modify the file as follows.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /usr/local/etc/torrc.d/50_user.conf</span>
+</p>
+</div>
+<p><br/>
+Modify the file as follows.
 </p>
 <pre>HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 2000 10.152.152.11:2000

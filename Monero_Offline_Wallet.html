@@ -452,14 +452,26 @@ sincerely fictional glide equip fierce january journal kisses zoom
 <h3><span class="mw-headline" id="socat_setup">socat setup</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Monero_Offline_Wallet&amp;action=edit&amp;section=10" href="https://www.whonix.org/w/index.php?title=Monero_Offline_Wallet&amp;action=edit&amp;section=10.html" title="Edit section: socat setup">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
 <p><b>Note:</b> The following instructions should be applied in Whonix-Workstation ™ (<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: App Qube <code>monero-wallet-ws</code>).
 </p><p><b>1.</b> Open file <code>/rw/config/rc.local</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /rw/config/rc.local</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p><b>2.</b> Append at the bottom.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /rw/config/rc.local</span>
+</p>
+</div>
+<p><br/>
+<b>2.</b> Append at the bottom.
 </p><p><span class="code-select">socat TCP-LISTEN:18081,fork,bind=127.0.0.1 EXEC:"qrexec-client-vm monerod-ws user.monerod"</span>
 </p><p><b>3.</b> Save and close file.
 </p><p><b>4.</b> Make the <code>/rw/config/rc.local</code> script executable.

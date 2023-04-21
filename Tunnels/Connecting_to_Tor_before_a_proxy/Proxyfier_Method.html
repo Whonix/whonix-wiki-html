@@ -396,14 +396,26 @@ sudo systemctl mask anon-ws-disable-stacked-tor_autogen__run_anon-ws-disable-sta
 <div class="info-box">
 <p><b>A)</b> Add Debian source repository.
 </p><p>Open file <code>/etc/apt/sources.list.d/debian-src.list</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /etc/apt/sources.list.d/debian-src.list</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p>Paste.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /etc/apt/sources.list.d/debian-src.list</span>
+</p>
+</div>
+<p><br/>
+Paste.
 </p><p><span class="code-select">deb-src https://deb.debian.org/debian bullseye main contrib non-free</span>
 </p><p>Save and exit.
 </p><p><span class="code-select">sudo apt update</span>
@@ -644,14 +656,26 @@ accesscheck(s, auth, src, dst, emsg, emsgsize)
 </p>
 </div>
 <p><b>5.</b> Open file <code>/etc/danted.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /etc/danted.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p><b>6.</b> Local socks proxy configuration.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /etc/danted.conf</span>
+</p>
+</div>
+<p><br/>
+<b>6.</b> Local socks proxy configuration.
 </p>
 <ul><li>Non-Qubes-Whonix: In Whonix-Workstation ™.</li>
 <li>Qubes-Whonix: In <code>whonix-ws-16</code> Template.</li></ul>
@@ -691,14 +715,26 @@ socks pass {
 <li>Qubes-Whonix: In <code>whonix-ws-16</code> Template.</li></ul>
 <p>Stop Tor from using unix domain socket files for socks so it uses socks on IP 127.0.0.1 port 9150 instead.
 </p><p>Open file <code>/etc/torbrowser.d/50_user.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /etc/torbrowser.d/50_user.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p>Paste.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /etc/torbrowser.d/50_user.conf</span>
+</p>
+</div>
+<p><br/>
+Paste.
 </p><p><span class="code-select">unset TOR_SOCKS_IPC_PATH</span>
 </p><p>Save and exit.
 </p><p><b>9.</b> Platform specific notice:
@@ -730,14 +766,26 @@ socks pass {
 <ul><li><a data-href="/wiki/Non-Qubes-Whonix" href="../../Non-Qubes-Whonix.html" title="Non-Qubes-Whonix">Non-Qubes-Whonix ™</a>: No platform specific notice.</li>
 <li><a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template. (<code>whonix-ws-16</code>)</li></ul>
 <p><b>2.</b> Open file <code>/etc/environment</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /etc/environment</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p><b>3.</b> Add the following line.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /etc/environment</span>
+</p>
+</div>
+<p><br/>
+<b>3.</b> Add the following line.
 </p><p><span class="code-select">TOR_TRANSPROXY=1
 ## newline at the end</span>
 </p><p><b>4.</b> Save and exit.
@@ -822,14 +870,26 @@ socks pass {
 <p><b>2.</b> If you previously onionized any repositories, that has to be undone; see <a data-href="/wiki/Onionizing_Repositories" href="../../Onionizing_Repositories.html" title="Onionizing Repositories">Onionizing Repositories</a>.
 </p><p><b>3.</b> Remove any mention of <code>tor+</code> in file <code>/etc/apt/sources.list</code> (if it was previously configured; that file is empty by default in Whonix ™ / Kicksecure) or any file in folder <code>/etc/apt/sources.list.d</code>.
 </p><p><b>4.</b> Open file <code>/etc/apt/sources.list /etc/apt/sources.list.d/*</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /etc/apt/sources.list /etc/apt/sources.list.d/*</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p><b>5.</b> Remove any mention of <code>tor+</code>.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /etc/apt/sources.list /etc/apt/sources.list.d/*</span>
+</p>
+</div>
+<p><br/>
+<b>5.</b> Remove any mention of <code>tor+</code>.
 </p><p><b>6.</b> Done.
 </p><p>The process of removing proxy settings from APT repository files is now complete.
 </p>
@@ -841,14 +901,26 @@ socks pass {
 <ul><li><a data-href="/wiki/Non-Qubes-Whonix" href="../../Non-Qubes-Whonix.html" title="Non-Qubes-Whonix">Non-Qubes-Whonix ™</a>: No platform specific notice.</li>
 <li><a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template. (<code>whonix-ws-16</code>) <sup class="reference" id="cite_ref-usr-local-etc-torbrowser-dot-d_6-0"><a href="#cite_note-usr-local-etc-torbrowser-dot-d-6">[6]</a></sup></li></ul>
 <p><b>2.</b> Open file <code>/etc/torbrowser.d/50_user.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /etc/torbrowser.d/50_user.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p><b>3.</b> Paste. <sup class="reference" id="cite_ref-7"><a href="#cite_note-7">[7]</a></sup> <sup class="reference" id="cite_ref-8"><a href="#cite_note-8">[8]</a></sup>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /etc/torbrowser.d/50_user.conf</span>
+</p>
+</div>
+<p><br/>
+<b>3.</b> Paste. <sup class="reference" id="cite_ref-7"><a href="#cite_note-7">[7]</a></sup> <sup class="reference" id="cite_ref-8"><a href="#cite_note-8">[8]</a></sup>
 </p><p><span class="code-select">TB_NO_TOR_CON_CHECK=1
 CURL_PROXY="--fail"</span>
 </p><p><b>4.</b> Save and exit.
@@ -894,14 +966,26 @@ CURL_PROXY="--fail"</span>
 <ul><li><a data-href="/wiki/Non-Qubes-Whonix" href="../../Non-Qubes-Whonix.html" title="Non-Qubes-Whonix">Non-Qubes-Whonix ™</a>: No platform specific notice.</li>
 <li><a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template. (<code>whonix-ws-16</code>) <sup class="reference" id="cite_ref-uwt-in-app-qube_9-0"><a href="#cite_note-uwt-in-app-qube-9">[9]</a></sup></li></ul>
 <p><b>2.</b> Open file <code>/etc/uwt.d/50_user.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /etc/uwt.d/50_user.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p><b>3.</b> Add.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /etc/uwt.d/50_user.conf</span>
+</p>
+</div>
+<p><br/>
+<b>3.</b> Add.
 </p><p><span class="code-select">uwtwrapper_global="0"</span>
 </p><p><b>4.</b> Save and exit.
 </p><p><b>5.</b> Done.
@@ -940,14 +1024,26 @@ CURL_PROXY="--fail"</span>
 </p><p><span class="code-select">sudo apt install proxychains</span>
 </p><p>Open proxychains configuration file.
 </p><p>Open file <code>/etc/proxychains.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /etc/proxychains.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p>Go to the bottom of the settings file. Comment out "<i><span style="background-color:#FBFBFB">socks4 127.0.0.1 9050</span></i>" and add for example "<i><span style="background-color:#FBFBFB">socks5 10.152.152.10 9152</span></i>" (for Tor stream isolation) or "<i><span style="background-color:#FBFBFB">socks5 ip port</span></i>" with an IP and port of your choice to set the proxy settings.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /etc/proxychains.conf</span>
+</p>
+</div>
+<p><br/>
+Go to the bottom of the settings file. Comment out "<i><span style="background-color:#FBFBFB">socks4 127.0.0.1 9050</span></i>" and add for example "<i><span style="background-color:#FBFBFB">socks5 10.152.152.10 9152</span></i>" (for Tor stream isolation) or "<i><span style="background-color:#FBFBFB">socks5 ip port</span></i>" with an IP and port of your choice to set the proxy settings.
 </p>
 <pre>[ProxyList]
 ## add proxy here ...
@@ -1015,11 +1111,22 @@ Qubes-Whonix ™ users note: In App Qube (<code>whonix-ws-16</code>) could also 
 <p><b>1.</b> Create folder <code>/usr/local/etc/torbrowser.d</code>.
 </p><p><span class="code-select">mkdir -p /usr/local/etc/torbrowser.d</span>
 </p><p><b>2.</b> Open file <code>/usr/local/etc/torbrowser.d/50_user.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /usr/local/etc/torbrowser.d/50_user.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
+</p>
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /usr/local/etc/torbrowser.d/50_user.conf</span>
 </p>
 </div>
 </div></span>
@@ -1039,11 +1146,22 @@ Qubes-Whonix ™ users note: Or alternatively in App Qube.
 <p><b>1.</b> Create folder <code>/usr/local/etc/uwt.d</code>.
 </p><p><span class="code-select">sudo mkdir -p /usr/local/etc/uwt.d</span>
 </p><p><b>2.</b> Open file <code>/usr/local/etc/uwt.d/50_user.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /usr/local/etc/uwt.d/50_user.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="../../Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
+</p>
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../../Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /usr/local/etc/uwt.d/50_user.conf</span>
 </p>
 </div>
 </div></span>

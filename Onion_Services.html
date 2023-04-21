@@ -842,14 +842,26 @@ Warning: This is for <u><b>testers-only</b></u>!
 </p><p>1. Make sure folder <code>/rw/config/qubes-bind-dirs.d</code> exists.
 </p><p><span class="code-select">sudo mkdir -p /rw/config/qubes-bind-dirs.d</span>
 </p><p>2. Open file <code>/rw/config/qubes-bind-dirs.d/50_user.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /rw/config/qubes-bind-dirs.d/50_user.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p>3. Paste.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /rw/config/qubes-bind-dirs.d/50_user.conf</span>
+</p>
+</div>
+<p><br/>
+3. Paste.
 </p><p><span class="code-select">binds+=( '/etc/onionbalance' )</span>
 </p><p>4. Save.
 </p><p>5. Reboot the app qube.
@@ -923,14 +935,26 @@ Warning: This is for <u><b>testers-only</b></u>!
 </p><p><b>2.</b> Open the <code>ob_config</code> file.
 </p><p><u>Note:</u> Replace <code>/var/lib/tor/hidden_service</code> with a different path if the user is using a different <code>HiddenServiceDir</code>.
 </p><p>Open file <code>/var/lib/tor/hidden_service/ob_config</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /var/lib/tor/hidden_service/ob_config</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p><b>3.</b> Paste.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /var/lib/tor/hidden_service/ob_config</span>
+</p>
+</div>
+<p><br/>
+<b>3.</b> Paste.
 </p><p><u>Note:</u> Replace <code>dpkhemrbs3oiv2fww5sxs6r2uybczwijzfn2ezy2osaj7iox7kl7nhad.onion</code> with the actual <code>MasterOnionAddress</code>.
 </p><p><span class="code-select">MasterOnionAddress dpkhemrbs3oiv2fww5sxs6r2uybczwijzfn2ezy2osaj7iox7kl7nhad.onion</span>
 </p><p><b>4.</b> Done.
@@ -982,14 +1006,26 @@ Configuration was valid</pre>
 <p>On the Whonix-Gateway ™ OnionBalance frontend server.
 </p><p><b>1.</b> OnionBalance Frontend Config File Setup
 </p><p>Open file <code>/etc/onionbalance/config.yaml</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /etc/onionbalance/config.yaml</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p><b>2.</b> Example of how the file initially will look like.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /etc/onionbalance/config.yaml</span>
+</p>
+</div>
+<p><br/>
+<b>2.</b> Example of how the file initially will look like.
 </p><p>For informational purposes only.
 </p>
 <pre># OnionBalance Config File

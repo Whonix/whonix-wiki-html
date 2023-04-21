@@ -244,14 +244,26 @@ Documentation for this is incomplete. Contributions are happily considered! See 
 </p><p>By copying the <code>control.authcookie</code> file from the gateway to Whonix-Workstation ™ <code>/usr/share/anon-ws-disable-stacked-tor/control.authcookie</code> one might be able to have Tor cookie authentication. Contents of <code>/usr/share/anon-ws-disable-stacked-tor/control.authcookie</code> will be overwritten when package anon-ws-disable-stacked-tor is upgraded.
 </p><p>Therefore this exercise might be a bit pointless. A better solution might be to use Tor Browser control protocol authentication using a Tor control password rather than Tor control auth cookie.
 </p><p>Open file <code>/etc/X11/Xsession.d/50user</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /etc/X11/Xsession.d/50user</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p>Paste the following contents.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /etc/X11/Xsession.d/50user</span>
+</p>
+</div>
+<p><br/>
+Paste the following contents.
 </p><p><span class="code-select">## see also /usr/lib/anon-ws-disable-stacked-tor/torbrowser.sh
 
 ## See workstation file ~/.tb/tor-browser/Browser/start-tor-browser

@@ -304,13 +304,13 @@
 <p><b>1.</b> On the host (<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: <code>dom0</code>), run the following command to report the time in UTC.
 </p><p><span class="code-select">date -u</span>
 </p><p>The output should be similar to the following. <sup class="reference" id="cite_ref-9"><a href="#cite_note-9">[9]</a></sup>
-</p><p><span class="code-select">Apr 20 01:07:44 UTC 2023</span>
+</p><p><span class="code-select">Apr 21 01:06:44 UTC 2023</span>
 </p><p><b>2.</b> Set the correct time in Whonix-Gateway ™ (<code>sys-whonix</code>).
 </p><p>Run the following command with the correct date and time parameters. <sup class="reference" id="cite_ref-10"><a href="#cite_note-10">[10]</a></sup> <sup class="reference" id="cite_ref-11"><a href="#cite_note-11">[11]</a></sup>
 </p>
 <ul><li><code>clock-random-manual-gui</code>: a randomized clock setting (in UTC) is entered via a GUI.</li>
 <li><code>clock-random-manual-cli</code>: a randomized clock setting (in UTC) is entered on the command line. For example <sup class="reference" id="cite_ref-12"><a href="#cite_note-12">[12]</a></sup>:</li></ul>
-<p><span class="code-select">echo "Apr 20 01:07:44 UTC 2023" | sudo clock-random-manual-cli</span>
+<p><span class="code-select">echo "Apr 21 01:06:44 UTC 2023" | sudo clock-random-manual-cli</span>
 </p><p><b>3.</b> Restart sdwdate.
 </p><p><span class="code-select">sudo service sdwdate restart</span>
 </p><p><b>4.</b> If Tor is still not functional, try restarting Tor.
@@ -336,14 +336,26 @@ Warning: This is for <u><b>testers-only</b></u>!
 <p><b>1.</b> Edit the Whonix ™ firewall configuration.
 </p><p>In <i>both</i> Whonix-Gateway ™ (<code>whonix-gw-16</code>) and Whonix-Workstation ™ (<code>whonix-ws-16</code>), run.
 </p><p>Open file <code>/etc/whonix_firewall.d/50_user.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /etc/whonix_firewall.d/50_user.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p><b>2.</b> Copy and paste the following text.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /etc/whonix_firewall.d/50_user.conf</span>
+</p>
+</div>
+<p><br/>
+<b>2.</b> Copy and paste the following text.
 </p><p><span class="code-select">firewall_mode=</span>
 </p><p><b>3.</b> Save the file and reboot.
 </p><p><b>4.</b> Have the changes take effect.
@@ -534,14 +546,26 @@ Also see:
 <p><b>1.</b> Edit the Whonix ™ firewall configuration.
 </p><p>In the chosen Whonix ™ App Qube, run.
 </p><p>Open file <code>/usr/local/etc/whonix_firewall.d/*.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /usr/local/etc/whonix_firewall.d/*.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p><b>2.</b> Copy and paste the following text.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /usr/local/etc/whonix_firewall.d/*.conf</span>
+</p>
+</div>
+<p><br/>
+<b>2.</b> Copy and paste the following text.
 </p><p><span class="code-select">firewall_mode=</span>
 </p><p><b>3.</b> Save the file and reboot.
 </p>

@@ -375,14 +375,26 @@ By default, the following instructions will result in:
 <b>2.</b> Create folder <i><span style="background-color:#FBFBFB">/etc/corridor.d</span></i> and configuration file <i><span style="background-color:#FBFBFB">/etc/corridor.d/21-bridges-user.conf</span></i> first. <sup class="reference" id="cite_ref-7"><a href="#cite_note-7">[7]</a></sup> <br/>
 <b>3.</b> Create a bridges configuration file.
 Open file <code>/etc/corridor.d/21-bridges-user.conf</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /etc/corridor.d/21-bridges-user.conf</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p><b>4.</b> Review Whonix-Gateway ™ (<code>sys-whonix</code>) <a data-href="/wiki/Bridges" href="./Bridges.html" title="Bridges">Tor bridge</a> settings.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /etc/corridor.d/21-bridges-user.conf</span>
+</p>
+</div>
+<p><br/>
+<b>4.</b> Review Whonix-Gateway ™ (<code>sys-whonix</code>) <a data-href="/wiki/Bridges" href="./Bridges.html" title="Bridges">Tor bridge</a> settings.
 </p><p>Depending on how Tor bridges are configured on Whonix-Gateway ™ (<code>sys-whonix</code>):
 </p>
 <ul><li>if <a data-href="/wiki/Anon_Connection_Wizard" href="./Anon_Connection_Wizard.html" title="Anon Connection Wizard">Anon Connection Wizard</a> was used, see configuration file <code>/usr/local/etc/torrc.d/40_tor_control_panel.conf</code>.</li>
@@ -429,14 +441,26 @@ sudo systemctl --no-pager status corridor-init-snat</span>
 <h2><span class="mw-headline" id="Test_Logging">Test Logging</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Corridor&amp;action=edit&amp;section=15" href="https://www.whonix.org/w/index.php?title=Corridor&amp;action=edit&amp;section=15.html" title="Edit section: Test Logging">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
 <p>Whenever corridor blocks attempted actions (like the <a href="#Test_corridor">tests above</a>), a message will appear in syslog. To inspect <i><span style="background-color:#FBFBFB">/var/log/syslog</span></i>
 </p><p>Open file <code>/var/log/syslog</code> in an editor with root rights.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: In Template)
 </p>
 <div class="info-box">
-<p>This box uses <code>sudoedit</code> for better security. This is an example and other tools could also achieve the same goal. If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.
-</p><p><span class="code-select">sudoedit /var/log/syslog</span>
+<p>This box uses <code>sudoedit</code> for better security.
+</p>
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
+</div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<p>To check for blocks inside <code>sys-corridor</code>, run.
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<ul><li>This is just an example. Other tools could achieve the same goal.</li>
+<li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
+</div>
+<p><span class="code-select">sudoedit /var/log/syslog</span>
+</p>
+</div>
+<p><br/>
+To check for blocks inside <code>sys-corridor</code>, run.
 </p><p><span class="code-select">sudo tail -f /var/log/syslog</span>
 </p><p>If corridor blocks anything, the output will be similar to this.
 </p><p><span class="code-select">Jul 19 00:58:27 localhost kernel: [  954.706833] corridor:</span>
