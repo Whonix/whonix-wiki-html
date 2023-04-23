@@ -1212,24 +1212,23 @@ Bridge fte 300.100.300.80:23521 4352e58420e68f5e40bf7c74faddccd9d1349413</span>
 <p><b>1.</b> Open file <code>/etc/tor/vanguards.conf</code> in an editor with root rights.
 </p>
 <div class="info-box">
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights-/etc/tor/vanguards.conf"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights-/etc/tor/vanguards.conf" data-tcc-title="Non-Qubes-Whonix ™">
 <p>This box uses <code>sudoedit</code> for better security.
 </p>
-<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
-<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
 </div>
-<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights-/etc/tor/vanguards.conf" data-tcc-title="Qubes-Whonix ™">
 <p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights-/etc/tor/vanguards.conf" data-tcc-title="Others and Alternatives">
 <ul><li>This is just an example. Other tools could achieve the same goal.</li>
 <li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
 </div>
 <p><span class="code-select">sudoedit /etc/tor/vanguards.conf</span>
 </p>
 </div>
-<p><br/>
-<b>2.</b> change <code>control_socket = </code> to <code>control_socket = /run/tor/control</code>
+<p><b>2.</b> change <code>control_socket = </code> to <code>control_socket = /run/tor/control</code>
 </p><p><b>3.</b> Save.
 </p><p><b>4.</b> Restart vanguards.
 </p><p><span class="code-select">sudo systemctl restart vanguards</span>

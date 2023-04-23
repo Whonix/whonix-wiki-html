@@ -330,24 +330,23 @@ While multiple Whonix-Workstation ™ are recommended, this is <u>not</u> an end
 </p><p><b>B)</b> Open file <code>/usr/local/etc/sdwdate-gui.d/50_user.conf</code> in an editor with root rights.
 </p>
 <div class="info-box">
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights-/usr/local/etc/sdwdate-gui.d/50_user.conf"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights-/usr/local/etc/sdwdate-gui.d/50_user.conf" data-tcc-title="Non-Qubes-Whonix ™">
 <p>This box uses <code>sudoedit</code> for better security.
 </p>
-<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
-<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
 </div>
-<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights-/usr/local/etc/sdwdate-gui.d/50_user.conf" data-tcc-title="Qubes-Whonix ™">
 <p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights-/usr/local/etc/sdwdate-gui.d/50_user.conf" data-tcc-title="Others and Alternatives">
 <ul><li>This is just an example. Other tools could achieve the same goal.</li>
 <li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
 </div>
 <p><span class="code-select">sudoedit /usr/local/etc/sdwdate-gui.d/50_user.conf</span>
 </p>
 </div>
-<p><br/>
-<b>C)</b> Add the following text.
+<p><b>C)</b> Add the following text.
 </p><p>Note: The following example uses <code>sys-whonix2</code> as an example. Replace <code>sys-whonix2</code> with the name of the VM of Whonix-Gateway ™ which this Whonix-Workstation ™ App Qube uses as its <code>net qube</code>. For example, <code>sys-whonix3</code>.
 </p><p><span class="code-select">gateway=sys-whonix2</span>
 </p><p><b>D.)</b> Save the file.
@@ -394,24 +393,23 @@ Each additional Whonix-Workstation ™ VM <u>must</u> have its own MAC address a
 </p><p>Open file <code>/etc/network/interfaces.d/30_non-qubes-whonix</code> in an editor with root rights.
 </p>
 <div class="info-box">
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights-/etc/network/interfaces.d/30_non-qubes-whonix"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights-/etc/network/interfaces.d/30_non-qubes-whonix" data-tcc-title="Non-Qubes-Whonix ™">
 <p>This box uses <code>sudoedit</code> for better security.
 </p>
-<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
-<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
 </div>
-<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights-/etc/network/interfaces.d/30_non-qubes-whonix" data-tcc-title="Qubes-Whonix ™">
 <p>NOTE: When using <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights-/etc/network/interfaces.d/30_non-qubes-whonix" data-tcc-title="Others and Alternatives">
 <ul><li>This is just an example. Other tools could achieve the same goal.</li>
 <li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="./Software.html" title="Software">this link</a>.</li></ul>
 </div>
 <p><span class="code-select">sudoedit /etc/network/interfaces.d/30_non-qubes-whonix</span>
 </p>
 </div>
-<p><br/>
-Ignore all lines starting with a hashtag ("<code>#</code>"). That is because comments are only for documentation and notes. However, comments are ignored by the system.
+<p>Ignore all lines starting with a hashtag ("<code>#</code>"). That is because comments are only for documentation and notes. However, comments are ignored by the system.
 </p><p>Look for line <code>address 10.152.152.11</code>. Change the last octet. For example, change <code>10.152.152.1<b>1</b></code> to <code>10.152.152.1<b>2</b></code>
 </p><p>Save and exit.
 </p><p><b>4.</b> Review your changes.

@@ -375,24 +375,23 @@ W: Some index files failed to download. They have been ignored, or old ones used
 </p><p>Open file <code>/etc/apt/sources.list.d/debian.list</code> in an editor with root rights.
 </p>
 <div class="info-box">
+<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights-/etc/apt/sources.list.d/debian.list"></div>
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights-/etc/apt/sources.list.d/debian.list" data-tcc-title="Non-Qubes-Whonix ™">
 <p>This box uses <code>sudoedit</code> for better security.
 </p>
-<div class="tab-content-controller" data-tcc-id="open-in-editor-with-root-rights"></div>
-<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Non-Qubes-Whonix ™">
 </div>
-<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Qubes-Whonix ™">
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights-/etc/apt/sources.list.d/debian.list" data-tcc-title="Qubes-Whonix ™">
 <p>NOTE: When using <a data-href="/wiki/Qubes" href="../Qubes.html" title="Qubes">Qubes-Whonix ™</a>, this needs to be done inside the Template.
 </p>
 </div>
-<div class="info-box" data-tcc-id="open-in-editor-with-root-rights" data-tcc-title="Others and Alternatives">
+<div class="info-box" data-tcc-id="open-in-editor-with-root-rights-/etc/apt/sources.list.d/debian.list" data-tcc-title="Others and Alternatives">
 <ul><li>This is just an example. Other tools could achieve the same goal.</li>
 <li>If this example does not work for you or if you are not using Whonix ™, please refer to <a class="mw-redirect" data-href="/wiki/Software#Text_Editor" href="../Software.html" title="Software">this link</a>.</li></ul>
 </div>
 <p><span class="code-select">sudoedit /etc/apt/sources.list.d/debian.list</span>
 </p>
 </div>
-<p><br/>
-<b>2.</b> Comment (#) the .onion address lines and uncomment the clearnet address lines.
+<p><b>2.</b> Comment (#) the .onion address lines and uncomment the clearnet address lines.
 </p><p>The code blocks should look like this; only these entries require editing. <sup class="reference" id="cite_ref-10"><a href="#cite_note-10">[10]</a></sup>
 </p><p><span class="code-select">deb tor+https://deb.debian.org/debian bullseye main contrib non-free
 deb tor+https://deb.debian.org/debian bullseye-updates main contrib non-free
