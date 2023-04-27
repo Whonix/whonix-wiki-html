@@ -69,8 +69,8 @@
 <meta content="https://www.whonix.org/w/images/5/59/Whonix-twitter-post.jpg?version=54f067e87f7190deda500f4c79618b61" property="og:image"/>
 <meta content="1280" property="og:image:width"/>
 <meta content="720" property="og:image:height"/>
-<meta content="2023-02-02T13:13:38Z" property="article:modified_time"/>
-<meta content="2023-02-02T13:13:38Z" property="article:published_time"/>
+<meta content="2023-04-26T11:52:30Z" property="article:modified_time"/>
+<meta content="2023-04-26T11:52:30Z" property="article:published_time"/>
 <meta content="website" property="og:type"/>
 
 </head>
@@ -135,7 +135,7 @@
 <div class="col2">
 <span class="headline page">Page</span>
 <a class="view" data-href="/wiki/Dev/Build Documentation/VM" href="../../Dev/Build Documentation/VM">Read</a>
-<a class="edit" data-href="/w/index.php?title=Dev/Build Documentation/VM&amp;action=edit&amp;oldid=92433" href="https://www.whonix.org/w/index.php?title=Dev/Build Documentation/VM&amp;action=edit&amp;oldid=92433">Edit</a>
+<a class="edit" data-href="/w/index.php?title=Dev/Build Documentation/VM&amp;action=edit&amp;oldid=93664" href="https://www.whonix.org/w/index.php?title=Dev/Build Documentation/VM&amp;action=edit&amp;oldid=93664">Edit</a>
 <a class="history user-logged-in" data-href="/w/index.php?title=Dev/Build Documentation/VM&amp;action=history" href="https://www.whonix.org/w/index.php?title=Dev/Build Documentation/VM&amp;action=history">History</a>
 <a class="move user-logged-in" data-href="/wiki/Special:MovePage/Dev/Build Documentation/VM" href="../../Special:MovePage/Dev/Build Documentation/VM">Move</a>
 <a class="protect" data-href="/w/index.php?title=Dev/Build Documentation/VM&amp;action=protect" href="https://www.whonix.org/w/index.php?title=Dev/Build Documentation/VM&amp;action=protect">Protection</a>
@@ -303,9 +303,7 @@ Digital signatures can increase security but this requires knowledge. Learn more
 </p><p>Chose either Option A <u>or</u> Option B.
 </p>
 <div class="tab-content-controller" data-tcc-id="sudo-setup"></div>
-<div class="info-box" data-tcc-id="sudo-setup" data-tcc-title="Option A: passwordless sudo">
-<p><u>Option A:</u> Set up passwordless sudo.
-</p>
+<div class="info-box active" data-tcc-id="sudo-setup" data-tcc-title="Option A: passwordless sudo"><u>Option A:</u> Set up passwordless sudo.
 <ul><li>Abstract task overview: Setup passwordless sudo for your Linux user account name.</li>
 <li>Detailed task overview: Setup sudo and add your current linux user account to the linux user group <code>sudo</code>. The following instructions use Linux user account name <code>user</code> as an example. If the user is using a different Linux user account name such as <code>myname</code> then the commands below have to be adjusted accordingly.</li>
 <li>Unspecific: Configuration of sudo is <a data-href="/wiki/Unspecific" href="../../Unspecific.html" title="Unspecific">unspecific to Whonix ™</a>.</li>
@@ -323,12 +321,10 @@ Digital signatures can increase security but this requires knowledge. Learn more
 </p>
 </div>
 <p><b>2. </b> Configure user <code>user</code> to be able to use sudo without a password.
-</p><p><span class="code-select">echo '%sudo ALL=(ALL:ALL) NOPASSWD:ALL' | sudo EDITOR=tee visudo -f /etc/sudoers.d/dist-build-sudo-passwordless &gt;/dev/null</span>
 </p>
+<span class="code-select">echo '%sudo ALL=(ALL:ALL) NOPASSWD:ALL' | sudo EDITOR=tee visudo -f /etc/sudoers.d/dist-build-sudo-passwordless &gt;/dev/null</span>
 </div>
-<div class="info-box" data-tcc-id="sudo-setup" data-tcc-title="Option B: long sudo timeout">
-<p><u>Option B:</u> Set a longer sudo password timeout.
-</p>
+<div class="info-box" data-tcc-id="sudo-setup" data-tcc-title="Option B: long sudo timeout"><u>Option B:</u> Set a longer sudo password timeout.
 <ul><li>Abstract task overview: Setup sudo with a longer timeout for your Linux user account name.</li>
 <li>Detailed task overview: Setup sudo and increase the sudo password timeout (four all Linux user accounts or all users). The following instructions use Linux user account name <code>user</code> as an example. If the user is using a different Linux user account name such as <code>myname</code> then the commands below have to be adjusted accordingly.</li>
 <li>Unspecific: Configuration of sudo is <a data-href="/wiki/Unspecific" href="../../Unspecific.html" title="Unspecific">unspecific to Whonix ™</a>.</li>
@@ -346,8 +342,8 @@ Digital signatures can increase security but this requires knowledge. Learn more
 </p>
 </div>
 <p><b>2. </b> Configure user <code>user</code> to be able to use sudo without a password.
-</p><p><span class="code-select">echo 'Defaults timestamp_timeout=30' | sudo EDITOR=tee visudo -f /etc/sudoers.d/dist-build-sudo-timeout &gt;/dev/null</span>
 </p>
+<span class="code-select">echo 'Defaults timestamp_timeout=30' | sudo EDITOR=tee visudo -f /etc/sudoers.d/dist-build-sudo-timeout &gt;/dev/null</span>
 </div>
 <h1><span class="mw-headline" id="Special_Notice">Special Notice</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Dev/Build_Documentation/VM&amp;action=edit&amp;section=5" href="https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/VM&amp;action=edit&amp;section=5.html" title="Edit section: Special Notice">edit</a><span class="mw-editsection-bracket">]</span></span></h1>
 <p>There is currently no special notice.
@@ -962,7 +958,7 @@ This is sane since important VM settings were already configured in <a class="ex
   <div class="code-select"></div>
 </div>
 </div></div>
-<div class="printfooter" data-nosnippet="">Retrieved from "<a data-href="https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/VM&amp;oldid=92433" dir="ltr" href="https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/VM&amp;oldid=92433">https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/VM&amp;oldid=92433</a>"</div></div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a data-href="https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/VM&amp;oldid=93664" dir="ltr" href="https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/VM&amp;oldid=93664">https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/VM&amp;oldid=93664</a>"</div></div>
 <div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a data-href="/wiki/Special:Categories" href="../../Special:Categories.html" title="Special:Categories">Category</a>: <ul><li><a data-href="/wiki/Category:Development" href="../../Category:Development.html" title="Category:Development">Development</a></li></ul></div></div>
 </div>
 </div>
