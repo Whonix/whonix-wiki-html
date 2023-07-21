@@ -382,13 +382,13 @@
 <p><b>1.</b> On the host (<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: <code>dom0</code>), run the following command to report the time in UTC.
 </p><p><span class="code-select">date --utc</span>
 </p><p>The output should be similar to the following. <sup class="reference" id="cite_ref-9"><a href="#cite_note-9">[9]</a></sup>
-</p><p><span class="code-select">Jul 20 01:07:44 UTC 2023</span>
+</p><p><span class="code-select">Jul 21 00:59:44 UTC 2023</span>
 </p><p><b>2.</b> Set the correct time in Whonix-Gateway ™ (<code>sys-whonix</code>).
 </p><p>Run the following command with the correct date and time parameters. <sup class="reference" id="cite_ref-10"><a href="#cite_note-10">[10]</a></sup> <sup class="reference" id="cite_ref-11"><a href="#cite_note-11">[11]</a></sup>
 </p>
 <ul><li><code>clock-random-manual-gui</code>: a randomized clock setting (in UTC) is entered via a GUI.</li>
 <li><code>clock-random-manual-cli</code>: a randomized clock setting (in UTC) is entered on the command line. For example <sup class="reference" id="cite_ref-12"><a href="#cite_note-12">[12]</a></sup>:</li></ul>
-<p><span class="code-select">echo "Jul 20 01:07:44 UTC 2023" | sudo clock-random-manual-cli</span>
+<p><span class="code-select">echo "Jul 21 00:59:44 UTC 2023" | sudo clock-random-manual-cli</span>
 </p><p><b>3.</b> Restart sdwdate.
 </p><p><span class="code-select">sudo service sdwdate restart</span>
 </p><p><b>4.</b> If Tor is still not functional, try restarting Tor.
@@ -412,7 +412,7 @@ Warning: This is for <u><b>testers-only</b></u>!
 </p>
 <div class="info-box">
 <p><b>1.</b> Edit the Whonix ™ firewall configuration.
-</p><p>In <i>both</i> Whonix-Gateway ™ (<code>whonix-gw-16</code>) and Whonix-Workstation ™ (<code>whonix-ws-16</code>), run.
+</p><p>In <i>both</i> Whonix-Gateway ™ (<code>whonix-gw-17</code>) and Whonix-Workstation ™ (<code>whonix-ws-17</code>), run.
 </p><p>Open file <code>/etc/whonix_firewall.d/50_user.conf</code> in an editor with root rights.
 </p>
 <div class="info-box">
@@ -469,7 +469,7 @@ Warning: This is for <u><b>testers-only</b></u>!
 </p><p><b>4.</b> Have the changes take effect.
 </p>
 <ul><li><u>Non-Qubes-Whonix ™</u>: restart Whonix-Gateway ™ and Whonix-Workstation ™.</li>
-<li><u>Qubes-Whonix ™</u>: shutdown the Whonix-Gateway ™ (<code>whonix-gw-16</code>) and Whonix-Workstation ™ (<code>whonix-ws-16</code>) Templates and restart the App Qube (<code>sys-whonix</code> and <code>anon-whonix</code>).</li></ul>
+<li><u>Qubes-Whonix ™</u>: shutdown the Whonix-Gateway ™ (<code>whonix-gw-17</code>) and Whonix-Workstation ™ (<code>whonix-ws-17</code>) Templates and restart the App Qube (<code>sys-whonix</code> and <code>anon-whonix</code>).</li></ul>
 </div>
 <h1><span class="mw-headline" id="NTP">NTP</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Network_Time_Synchronization&amp;action=edit&amp;section=13" href="https://www.whonix.org/w/index.php?title=Network_Time_Synchronization&amp;action=edit&amp;section=13.html" title="Edit section: NTP">edit</a><span class="mw-editsection-bracket">]</span></span></h1>
 <h2><span class="mw-headline" id="Disabling_NTP">Disabling NTP</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Network_Time_Synchronization&amp;action=edit&amp;section=14" href="https://www.whonix.org/w/index.php?title=Network_Time_Synchronization&amp;action=edit&amp;section=14.html" title="Edit section: Disabling NTP">edit</a><span class="mw-editsection-bracket">]</span></span></h2>

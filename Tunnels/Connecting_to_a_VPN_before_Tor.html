@@ -299,8 +299,8 @@ Too difficult? Consider purchasing <a data-href="/wiki/Premium_Support" href="..
 </p><p>These "Separate VPN-Gateway" instructions are new. You might be one of the first users. You might run into minor issues. Please test and <a class="external text" data-href="https://forums.whonix.org" href="https://forums.whonix.org" rel="noreferrer noopener" target="_blank">report</a><sup class="ext-link-to-archive.html" title="Link to archived version"><a data-href="https://web.archive.org/web/https://forums.whonix.org" href="https://web.archive.org/web/https://forums.whonix.org" rel="noreferrer noopener" target="_blank"><img alt="archive.org" data-src="/w/images/7/73/Internet_Archive_logo.png" decoding="async" height="15" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAoCAYAAAB0HkOaAAACjUlEQVRYhc2YPW8TQRCGH39BfIZgGwICBEh8lkiUQElLgQQdoqJJRZm/EDqgowWJgoKGgoLfQAkIhUgoDcTYkIg4FsZgir3Ds3tzez7b5DLSyrvz7M28O3de77nE5FYCrgCLwF1gHvgMdKeImclqwHXgcZh4qLS3wDJwFSjMWsBp4B7wGviZICCptYAnwC1M5TJbGbOqZeB9xuS+1gsXtARc8AlYAO4Az4HNGQrwtVXgIXANqERC5oA3OyRAa3+AmzB6wOrAGV/p/qP1gHdSTAXYm5OYIc52sER+t+mfkHL4uQmszXK5GWw7p7x+kztkGTgLNIABsI5drULIm+G4A3x04h0GjgMBsAF8wn4eGsAJYD/wI4y/oQm7Qfx+1gW/pPCLTgx3k7zv8JcOfyFhUfQXFIGHMnAwlfFxN4bFi0lA8aXxEnYlAQ5mGRc9E7OKaTrxtGu8Y3lxQ0kmfe6qx+FN0S8CBzzcElNTgtVSeCD6+1J4QPx8Uwb2jCsmSOHSF0zALf+0lZmWW34pZpKVSV5V+JzIofFEMSVl4rS8wOg50bgVQwYbKhOHU3LpT+O7V0xfmdjPwH8pfCCSadzySzHay1dP9LVzRzeFb6dwy1/UnBMm0xaTxi2/FLOVEkzj3YT+uDx6n4qJ6SiT26L/TeGdhL52fR9zoJL2HfitiWkTt68Jfc3XJv6NcWN6x2li2hn4gPgR0l2AdyzFtJRkcvJ6CtdiZOLyJ70KnAOOYR6qFuZMG1kFOA8cxdyOL8AHTEUiO4k5cM9jqraCXa0jmH816qF/VRG4OyyqzGXgWY46FoFX0RtlFTiVo5gajF5v14BH+WlhJcfcuhWAB8DtvIUAT8uYLVrbXXfatv4CWncb4zb4QjwAAAAASUVORK5CYII=" width="13"/></a></sup> how it went.
 </p>
 <div class="info-box">
-<p><b>1.</b> Clone a Template for example, <code>debian-11</code> and name the new template clone <code>debian-11-vpn</code>. <sup class="reference" id="cite_ref-3"><a href="#cite_note-3">[3]</a></sup>
-</p><p><code>Qube Manager</code> → <code>debian-11</code> → <code><u>C</u>lone qube</code> → <i><code>Enter name for Qube clone:</code></i><code> debian-11-vpn</code> → <code>Press: OK</code>
+<p><b>1.</b> Clone a Template for example, <code>debian-12</code> and name the new template clone <code>debian-12-vpn</code>. <sup class="reference" id="cite_ref-3"><a href="#cite_note-3">[3]</a></sup>
+</p><p><code>Qube Manager</code> → <code>debian-12</code> → <code><u>C</u>lone qube</code> → <i><code>Enter name for Qube clone:</code></i><code> debian-12-vpn</code> → <code>Press: OK</code>
 </p><p><b>2.</b> Create a new ProxyVM based on the newly cloned template. Name the VM <code>sys-vpn</code> and set <code>sys-firewall</code> as NetVM. Make sure to check [✔] the box for <code>provides_network</code>.
 </p>
 <div class="info-box">
@@ -308,7 +308,7 @@ Too difficult? Consider purchasing <a data-href="/wiki/Premium_Support" href="..
 </p>
 <ul><li>Name and label: <code>sys-vpn</code> (Set any color)</li>
 <li>Type: <code>AppVM</code></li>
-<li>Template: <code>debian-11-vpn</code></li>
+<li>Template: <code>debian-12-vpn</code></li>
 <li>Networking: <code>sys-firewall</code></li>
 <li>Advanced:   [<code>✔</code>] <code>Provides network</code></li>
 <li>Press: <code>OK</code></li></ul>
@@ -397,10 +397,10 @@ All that is needed is modification of <code>Whonix-External.xml</code> to reflec
 <p>If you are interested in <a data-href="/wiki/Hide_Tor_from_your_Internet_Service_Provider" href="../Hide_Tor_from_your_Internet_Service_Provider.html" title="Hide Tor from your Internet Service Provider">hide Tor and Whonix ™ from the ISP</a> (read that page first)... After installing Whonix-Gateway ™, do the following steps before activating Tor in <span style="border:1px dotted #005cb9">Whonix ™ Setup Wizard</span>.
 </p>
 <h5><span class="mw-headline" id="Preparation">Preparation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a data-href="/w/index.php?title=Tunnels/Connecting_to_a_VPN_before_Tor&amp;action=edit&amp;section=14" href="https://www.whonix.org/w/index.php?title=Tunnels/Connecting_to_a_VPN_before_Tor&amp;action=edit&amp;section=14.html" title="Edit section: Preparation">edit</a><span class="mw-editsection-bracket">]</span></span></h5>
-<p>It is challenging to set up OpenVPN on Whonix ™ with a secure, leak-preventing <a href="#Fail_Closed_Mechanism">Fail Closed Mechanism</a>. For this reason, it is strongly recommended to first exercise outside of Whonix ™ and learn how to set up OpenVPN on Debian stable (currently bullseye). The following steps are a simple overview of the process:
+<p>It is challenging to set up OpenVPN on Whonix ™ with a secure, leak-preventing <a href="#Fail_Closed_Mechanism">Fail Closed Mechanism</a>. For this reason, it is strongly recommended to first exercise outside of Whonix ™ and learn how to set up OpenVPN on Debian stable (currently bookworm). The following steps are a simple overview of the process:
 </p>
 <ol><li>"Forget" about Whonix ™ for a while</li>
-<li>Prepare a Debian <code>bullseye</code> VM.</li>
+<li>Prepare a Debian <code>bookworm</code> VM.</li>
 <li>Install the Debian OpenVPN package: <code>sudo apt install openvpn</code>.</li>
 <li>Research how to set up a VPN using OpenVPN on the command line. Only proceed if this is successful. Please do not post support requests regarding these instructions before completing this basic exercise as this is <a data-href="/wiki/Unspecific" href="../Unspecific.html" title="Unspecific">unspecific to Whonix ™</a>.</li>
 <li>Search for help with general VPN setup in the <a href="#VPN_Setup">VPN Setup</a> section or in the <a data-href="/wiki/Tunnels/Examples" href="../Tunnels/Examples.html" title="Tunnels/Examples">VPN Tunnel Setup Examples</a> chapter. <a data-href="/wiki/Support" href="../Support.html" title="Support">Help</a> is available from various sources, and the VPN provider may also be of assistance.</li>
@@ -437,7 +437,7 @@ In Whonix-Gateway ™ App Qube. Make sure folder <code>/usr/local/etc/whonix_fir
 </p>
 <div class="info-box">
 <p><u>If using <a data-href="/wiki/Qubes" href="../Qubes.html" title="Qubes">Qubes-Whonix ™</a></u>, complete these steps.
-</p><p><code>Qubes App Launcher (blue/grey "Q")</code> → <code>Template:</code> <code>whonix-gw-16</code> → <code>Whonix Global Firewall Settings</code>
+</p><p><code>Qubes App Launcher (blue/grey "Q")</code> → <code>Template:</code> <code>whonix-gw-17</code> → <code>Whonix Global Firewall Settings</code>
 </p><p><u>If using a graphical Whonix-Gateway ™</u>, complete these steps.
 </p><p><code>Start Menu</code> → <code>Applications</code> → <code>Settings</code> → <code>Global Firewall Settings</code>
 </p><p><u>If using a terminal-only Whonix-Gateway ™</u>, complete these steps.
@@ -996,7 +996,7 @@ https://github.com/leapcode/bitmask_client/issues/1009
 </span>
 </li>
 <li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text">
-At the time of writing Debian <code>11</code> <code>bullseye</code> was the stable release version.</span>
+At the time of writing Debian <code>12</code> <code>bookworm</code> was the stable release version.</span>
 </li>
 <li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text">Because Whonix-Gateway ™ does not require any clearnet DNS anyhow.</span>
 </li>

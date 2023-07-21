@@ -261,14 +261,14 @@ baseurl = http://yum.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.on
 </p><p><b>2.</b> Comment the first line underneath "Main qubes updates repository".
 </p><p>The first code block should look similar to this.
 </p><p><span class="code-select"># Main qubes updates repository
-#deb [arch=amd64] https://deb.qubes-os.org/r4.1/vm bullseye main
-#deb-src https://deb.qubes-os.org/r4.1/vm bullseye main</span>
+#deb [arch=amd64] https://deb.qubes-os.org/r4.1/vm bookworm main
+#deb-src https://deb.qubes-os.org/r4.1/vm bookworm main</span>
 </p><p><b>3.</b> Uncomment the corresponding line underneath "Qubes Tor updates repositories".
 </p><p>The first code block should look similar to this.
 </p><p><span class="code-select"># Qubes Tor updates repositories
 # Main qubes updates repository
-deb [arch=amd64] tor+http://deb.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r4.1/vm bullseye main
-#deb-src http://deb.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r4.1/vm bullseye main</span>
+deb [arch=amd64] tor+http://deb.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r4.1/vm bookworm main
+#deb-src http://deb.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r4.1/vm bookworm main</span>
 </p><p>Save and exit.
 </p><p><b>4.</b> Confirm the onionized repositories are functional.
 </p><p><span class="code-select">sudo apt update &amp;&amp; sudo apt full-upgrade</span>
@@ -282,15 +282,15 @@ deb [arch=amd64] tor+http://deb.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltf
 </p><p><span class="code-select">sudo nano /etc/apt/sources.list</span>
 </p><p><b>2.</b> Reference the onionized Debian repositories.
 </p><p>Cut and paste the following <i>.onion</i> mirrors and comment out (#) the corresponding https repositories.
-</p><p><span class="code-select">#deb https://deb.debian.org/debian bullseye main contrib non-free
-deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bullseye main contrib non-free
+</p><p><span class="code-select">#deb https://deb.debian.org/debian bookworm main contrib non-free
+deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bookworm main contrib non-free
 
-#deb https://deb.debian.org/debian-security bullseye-security main contrib non-free
-deb tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion bullseye-security main contrib non-free
+#deb https://deb.debian.org/debian-security bookworm-security main contrib non-free
+deb tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion bookworm-security main contrib non-free
 
 #Optional Backports
-#deb https://deb.debian.org/debian bullseye-backports main contrib non-free
-deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bullseye-backports main contrib non-free</span>
+#deb https://deb.debian.org/debian bookworm-backports main contrib non-free
+deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bookworm-backports main contrib non-free</span>
 </p><p>Save and exit.
 </p><p><b>3.</b> Confirm the onionized repositories are functional.
 </p><p><span class="code-select">sudo apt update &amp;&amp; sudo apt full-upgrade</span>
@@ -307,14 +307,14 @@ deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/de
 </p><p><b>2.</b> Comment the first line underneath "Main qubes updates repository".
 </p><p>The first code block should look similar to this.
 </p><p><span class="code-select"># Main qubes updates repository
-#deb [arch=amd64] https://deb.qubes-os.org/r4.1/vm bullseye main
-#deb-src https://deb.qubes-os.org/r4.1/vm bullseye main</span>
+#deb [arch=amd64] https://deb.qubes-os.org/r4.1/vm bookworm main
+#deb-src https://deb.qubes-os.org/r4.1/vm bookworm main</span>
 </p><p><b>3.</b> Uncomment the corresponding line underneath "Qubes Tor updates repositories".
 </p><p>The first code block should look similar to this.
 </p><p><span class="code-select"># Qubes Tor updates repositories
 # Main qubes updates repository
-deb [arch=amd64] tor+http://deb.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r4.1/vm bullseye main
-#deb-src tor+http://deb.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r4.1/vm bullseye main</span>
+deb [arch=amd64] tor+http://deb.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r4.1/vm bookworm main
+#deb-src tor+http://deb.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r4.1/vm bookworm main</span>
 </p><p>Save and exit.
 </p><p><b>4.</b> Confirm the onionized repositories are functional.
 </p><p><span class="code-select">upgrade-nonroot</span>
@@ -351,11 +351,11 @@ deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/de
 </p><p><span class="code-select">sudo nano /etc/apt/sources.list.d/derivative.list</span>
 </p><p><b>2.</b> Uncomment the onionized Whonix ™ repository.
 </p><p>Uncomment the following .onion mirror and comment out (#) the corresponding https repository.
-</p><p><span class="code-select">deb [signed-by=/usr/share/keyrings/derivative.asc] tor+http://deb.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion bullseye main contrib non-free
-#deb-src [signed-by=/usr/share/keyrings/derivative.asc] tor+http://deb.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion bullseye main contrib non-free
+</p><p><span class="code-select">deb [signed-by=/usr/share/keyrings/derivative.asc] tor+http://deb.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion bookworm main contrib non-free
+#deb-src [signed-by=/usr/share/keyrings/derivative.asc] tor+http://deb.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion bookworm main contrib non-free
 
-#deb [signed-by=/usr/share/keyrings/derivative.asc] tor+https://deb.whonix.org bullseye main contrib non-free
-#deb-src [signed-by=/usr/share/keyrings/derivative.asc] tor+https://deb.whonix.org bullseye main contrib non-free</span>
+#deb [signed-by=/usr/share/keyrings/derivative.asc] tor+https://deb.whonix.org bookworm main contrib non-free
+#deb-src [signed-by=/usr/share/keyrings/derivative.asc] tor+https://deb.whonix.org bookworm main contrib non-free</span>
 </p><p>Save and exit.
 </p><p><b>3.</b> Confirm the onionized repository is functional.
 </p><p><span class="code-select">upgrade-nonroot</span>
@@ -404,15 +404,15 @@ Is this ok [y/N]:</span>
 </p><p><span class="code-select">sudo nano /etc/apt/sources.list</span>
 </p><p><b>2.</b> Reference the onionized Debian repositories.
 </p><p>Cut and paste the following <i>.onion</i> mirrors and comment out (#) the corresponding https repositories.
-</p><p><span class="code-select">#deb https://deb.debian.org/debian bullseye main contrib non-free
-deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bullseye main contrib non-free
+</p><p><span class="code-select">#deb https://deb.debian.org/debian bookworm main contrib non-free
+deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bookworm main contrib non-free
 
-#deb https://deb.debian.org/debian-security bullseye-security main contrib non-free
-deb tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion bullseye-security main contrib non-free
+#deb https://deb.debian.org/debian-security bookworm-security main contrib non-free
+deb tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion bookworm-security main contrib non-free
 
 #Optional Backports
-#deb https://deb.debian.org/debian bullseye-backports main contrib non-free
-deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bullseye-backports main contrib non-free</span>
+#deb https://deb.debian.org/debian bookworm-backports main contrib non-free
+deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bookworm-backports main contrib non-free</span>
 </p><p>Save and exit.
 </p><p><b>3.</b> Confirm the onionized repositories are functional.
 </p><p><span class="code-select">sudo apt update &amp;&amp; sudo apt full-upgrade</span>
@@ -427,15 +427,15 @@ deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/de
 </p><p><span class="code-select">sudo nano /etc/apt/sources.list.d/debian.list</span>
 </p><p><b>2.</b> Reference the onionized Debian repositories.
 </p><p>Cut and paste the following <i>.onion</i> mirrors and comment out (#) the corresponding https repositories.
-</p><p><span class="code-select">#deb https://deb.debian.org/debian bullseye main contrib non-free
-deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bullseye main contrib non-free
+</p><p><span class="code-select">#deb https://deb.debian.org/debian bookworm main contrib non-free
+deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bookworm main contrib non-free
 
-#deb https://deb.debian.org/debian-security bullseye-security main contrib non-free
-deb tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion bullseye-security main contrib non-free
+#deb https://deb.debian.org/debian-security bookworm-security main contrib non-free
+deb tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion bookworm-security main contrib non-free
 
 #Optional Backports
-#deb https://deb.debian.org/debian bullseye-backports main contrib non-free
-deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bullseye-backports main contrib non-free</span>
+#deb https://deb.debian.org/debian bookworm-backports main contrib non-free
+deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bookworm-backports main contrib non-free</span>
 </p><p>Save and exit.
 </p><p><b>3.</b> Confirm the onionized repositories are functional.
 </p><p><span class="code-select">sudo apt update &amp;&amp; sudo apt full-upgrade</span>
@@ -449,11 +449,11 @@ deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/de
 </p><p><span class="code-select">sudo nano /etc/apt/sources.list.d/derivative.list</span>
 </p><p><b>2.</b> Uncomment the onionized Whonix ™ repository.
 </p><p>Uncomment the following .onion mirror and comment out (#) the corresponding https repository.
-</p><p><span class="code-select">deb [signed-by=/usr/share/keyrings/derivative.asc] tor+http://deb.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion bullseye main contrib non-free
-#deb-src [signed-by=/usr/share/keyrings/derivative.asc] tor+http://deb.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion bullseye main contrib non-free
+</p><p><span class="code-select">deb [signed-by=/usr/share/keyrings/derivative.asc] tor+http://deb.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion bookworm main contrib non-free
+#deb-src [signed-by=/usr/share/keyrings/derivative.asc] tor+http://deb.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion bookworm main contrib non-free
 
-#deb [signed-by=/usr/share/keyrings/derivative.asc] tor+https://deb.whonix.org bullseye main contrib non-free
-#deb-src [signed-by=/usr/share/keyrings/derivative.asc] tor+https://deb.whonix.org bullseye main contrib non-free</span>
+#deb [signed-by=/usr/share/keyrings/derivative.asc] tor+https://deb.whonix.org bookworm main contrib non-free
+#deb-src [signed-by=/usr/share/keyrings/derivative.asc] tor+https://deb.whonix.org bookworm main contrib non-free</span>
 </p><p>Save and exit.
 </p><p><b>3.</b> Confirm the onionized repository is functional.
 </p><p><span class="code-select">upgrade-nonroot</span>

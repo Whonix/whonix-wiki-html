@@ -263,7 +263,7 @@
 
 </div>
 <div class="tcc-content">
-<div>Qubes-Whonix ™ Template (<code>whonix-ws-16</code>)</div>
+<div>Qubes-Whonix ™ Template (<code>whonix-ws-17</code>)</div>
 <p><span class="code-select">sudo http_proxy=http://127.0.0.1:8082 https_proxy=http://127.0.0.1:8082 extrepo enable whonix</span>
 </p>
 </div>
@@ -508,8 +508,8 @@
 <p><b>Option <u>A</u></b>: Add Whonix ™ Onion Repository.
 </p><p>To add Whonix ™ Repository over Onion please install <code>apt-transport-tor</code> from the Debian repository.
 </p><p><span class="code-select" data-language="bash">sudo apt install apt-transport-tor</span>
-</p><p>Add <a data-href="/wiki/Project-APT-Repository" href="./Project-APT-Repository.html" title="Project-APT-Repository">Whonix ™ APT repository</a> for default Whonix ™ using Debian <i><span style="background-color:#FBFBFB">stable</span></i>. At the time of writing this was <code>bullseye</code>.
-</p><p><span class="code-select" data-language="bash">echo "deb [signed-by=/usr/share/keyrings/derivative.asc] tor+http://deb.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion bullseye main contrib non-free" | sudo tee /etc/apt/sources.list.d/derivative.list</span>
+</p><p>Add <a data-href="/wiki/Project-APT-Repository" href="./Project-APT-Repository.html" title="Project-APT-Repository">Whonix ™ APT repository</a> for default Whonix ™ using Debian <i><span style="background-color:#FBFBFB">stable</span></i>. At the time of writing this was <code>bookworm</code>.
+</p><p><span class="code-select" data-language="bash">echo "deb [signed-by=/usr/share/keyrings/derivative.asc] tor+http://deb.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion bookworm main contrib non-free" | sudo tee /etc/apt/sources.list.d/derivative.list</span>
 </p>
 </div>
 </div>
@@ -525,8 +525,8 @@
 <p><b>Option <u>B</u></b>: Add Whonix ™ Clearnet Repository over Tor.
 </p><p>To add Whonix ™ Repository over torified clearnet install <code>apt-transport-tor</code> from the Debian repository.
 </p><p><span class="code-select" data-language="bash">sudo apt install apt-transport-tor</span>
-</p><p>Add Whonix ™ APT repository for default Whonix ™ using Debian stable. At the time of writing this was <code>bullseye</code>.
-</p><p><span class="code-select" data-language="bash">echo "deb [signed-by=/usr/share/keyrings/derivative.asc] tor+https://deb.whonix.org bullseye main contrib non-free" | sudo tee /etc/apt/sources.list.d/derivative.list</span>
+</p><p>Add Whonix ™ APT repository for default Whonix ™ using Debian stable. At the time of writing this was <code>bookworm</code>.
+</p><p><span class="code-select" data-language="bash">echo "deb [signed-by=/usr/share/keyrings/derivative.asc] tor+https://deb.whonix.org bookworm main contrib non-free" | sudo tee /etc/apt/sources.list.d/derivative.list</span>
 </p>
 </div>
 </div>
@@ -541,8 +541,8 @@
 <div class="tcc-content">
 <p><b>Option <u>C</u></b>: Add Whonix Clearnet Repository over clearnet.
 </p><p>NOTE: When later using <a class="new" data-href="/w/index.php?title=APT_Repository&amp;action=edit&amp;redlink=1" href="https://www.whonix.org/w/index.php?title=APT_Repository&amp;action=edit&amp;redlink=1.html" title="APT Repository (page does not exist)">Whonix ™ repository tool</a>, then this will be upgraded to "Clearnet Rep. via Tor", unless see footnote. <sup class="reference" id="cite_ref-5"><a href="#cite_note-5">[5]</a></sup>
-</p><p>To add Whonix ™ Repository over clearnet please add Whonix ™ APT repository for default Whonix ™ using Debian stable. At the time of writing this was <code>bullseye</code>.
-</p><p><span class="code-select" data-language="bash">echo "deb [signed-by=/usr/share/keyrings/derivative.asc] https://deb.whonix.org bullseye main contrib non-free" | sudo tee /etc/apt/sources.list.d/derivative.list</span>
+</p><p>To add Whonix ™ Repository over clearnet please add Whonix ™ APT repository for default Whonix ™ using Debian stable. At the time of writing this was <code>bookworm</code>.
+</p><p><span class="code-select" data-language="bash">echo "deb [signed-by=/usr/share/keyrings/derivative.asc] https://deb.whonix.org bookworm main contrib non-free" | sudo tee /etc/apt/sources.list.d/derivative.list</span>
 </p>
 </div>
 </div>
