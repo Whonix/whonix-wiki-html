@@ -72,8 +72,8 @@
 <meta content="https://www.whonix.org/w/images/5/59/Whonix-twitter-post.jpg?version=54f067e87f7190deda500f4c79618b61" property="og:image"/>
 <meta content="1280" property="og:image:width"/>
 <meta content="720" property="og:image:height"/>
-<meta content="2023-06-19T12:24:21Z" property="article:modified_time"/>
-<meta content="2023-06-19T12:24:21Z" property="article:published_time"/>
+<meta content="2023-07-21T11:41:33Z" property="article:modified_time"/>
+<meta content="2023-07-21T11:41:33Z" property="article:published_time"/>
 <meta content="website" property="og:type"/>
 
 </head>
@@ -131,7 +131,7 @@
 <div class="col2">
 <span class="headline page">Page</span>
 <a class="view" data-href="/wiki/Dev/Build Documentation/VM" href="../../Dev/Build Documentation/VM"><i class="fa-solid fa-house"></i>Read</a>
-<a class="edit" data-href="/w/index.php?title=Dev/Build Documentation/VM&amp;action=edit&amp;oldid=94556" href="https://www.whonix.org/w/index.php?title=Dev/Build Documentation/VM&amp;action=edit&amp;oldid=94556"><i class="fa-solid fa-pen"></i>Edit</a>
+<a class="edit" data-href="/w/index.php?title=Dev/Build Documentation/VM&amp;action=edit&amp;oldid=94837" href="https://www.whonix.org/w/index.php?title=Dev/Build Documentation/VM&amp;action=edit&amp;oldid=94837"><i class="fa-solid fa-pen"></i>Edit</a>
 <a class="history user-logged-in" data-href="/w/index.php?title=Dev/Build Documentation/VM&amp;action=history" href="https://www.whonix.org/w/index.php?title=Dev/Build Documentation/VM&amp;action=history"><i class="fa-sharp fa-solid fa-clock-rotate-left"></i>History</a>
 <a class="move user-logged-in" data-href="/wiki/Special:MovePage/Dev/Build Documentation/VM" href="../../Special:MovePage/Dev/Build Documentation/VM"><i class="fa-solid fa-share"></i>Move</a>
 <a class="protect" data-href="/w/index.php?title=Dev/Build Documentation/VM&amp;action=protect" href="https://www.whonix.org/w/index.php?title=Dev/Build Documentation/VM&amp;action=protect"><i class="fa-solid fa-shield-halved"></i>Protection</a>
@@ -254,7 +254,7 @@ Digital signatures can increase security but this requires knowledge. Learn more
 <div class="toccolours mw-collapsible mw-collapsed">
 <ul><li><u>Parallel builds unsupported warning:</u> Do not try to build Whonix-Gateway ™ and Whonix-Workstation ™ at the same time!</li></ul>
 <div class="mw-collapsible-content">
-<p>Building Whonix-Gateway ™ and Whonix-Workstation ™ at the same time is not supported due to limitations in the build script. In other words, do not try to run for example <span style="border:1px dotted #005cb9">~/derivative-maker/derivative-maker --flavor whonix-gateway -- --build --target virtualbox</span> and <span style="border:1px dotted #005cb9">~/derivative-maker/derivative-maker --flavor whonix-workstation -- --build --target virtualbox</span> at the same time. The build would probably fail.
+<p>Building Whonix-Gateway ™ and Whonix-Workstation ™ at the same time is not supported due to limitations in the build script. In other words, do not try to run for example <span style="border:1px dotted #005cb9">~/derivative-maker/derivative-maker --flavor whonix-gateway -- --target virtualbox</span> and <span style="border:1px dotted #005cb9">~/derivative-maker/derivative-maker --flavor whonix-workstation -- --target virtualbox</span> at the same time. The build would probably fail.
 </p>
 </div>
 </div>
@@ -648,16 +648,16 @@ nothing to commit, working tree clean</div>
 <hr/>
 <p><b>7.</b> Delete any existing Whonix-Gateway ™ virtual machine with the following command.
 </p><p><b>Warning</b>: This will delete any virtual machine named Whonix-Gateway ™ from VirtualBox installed on your build machine!
-</p><p><span class="code-select">~/derivative-maker/derivative-maker --flavor whonix-gateway-xfce --target virtualbox --clean</span>
+</p><p><span class="code-select">~/derivative-maker/derivative-delete --flavor whonix-gateway-xfce --target virtualbox</span>
 </p><p><b>8.</b> Delete any existing Whonix-Workstation ™ virtual machine with the following command.
 </p><p><b>Warning</b>: This will delete any virtual machine named Whonix-Workstation ™ from VirtualBox installed on your build machine!
-</p><p><span class="code-select">~/derivative-maker/derivative-maker --flavor whonix-workstation-xfce --target virtualbox --clean</span>
+</p><p><span class="code-select">~/derivative-maker/derivative-delete --flavor whonix-workstation-xfce --target virtualbox</span>
 </p>
 <hr/>
 <p><b>9.</b> Build a Whonix-Gateway ™ virtual machine image. <i><span style="background-color:#FBFBFB">build command</span></i>:
-</p><p><span class="code-select">~/derivative-maker/derivative-maker --flavor whonix-gateway-xfce --target virtualbox --build</span>
+</p><p><span class="code-select">~/derivative-maker/derivative-maker --flavor whonix-gateway-xfce --target virtualbox</span>
 </p><p><b>10.</b> Build a Whonix-Workstation ™ virtual machine image. <i><span style="background-color:#FBFBFB">build command</span></i>:
-</p><p><span class="code-select">~/derivative-maker/derivative-maker --flavor whonix-workstation-xfce --target virtualbox --build</span>
+</p><p><span class="code-select">~/derivative-maker/derivative-maker --flavor whonix-workstation-xfce --target virtualbox</span>
 </p>
 <hr/>
 <p>While building, you might see a few <a data-href="/wiki/Dev/Expected_Build_Warnings" href="../../Dev/Expected_Build_Warnings.html" title="Dev/Expected Build Warnings">Expected Build Warnings</a>.
@@ -976,7 +976,7 @@ This is sane since important VM settings were already configured in <a class="ex
 </div>
 </div>
 </div>
-<div class="printfooter" data-nosnippet="">Retrieved from "<a data-href="https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/VM&amp;oldid=94556" dir="ltr" href="https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/VM&amp;oldid=94556">https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/VM&amp;oldid=94556</a>"</div></div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a data-href="https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/VM&amp;oldid=94837" dir="ltr" href="https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/VM&amp;oldid=94837">https://www.whonix.org/w/index.php?title=Dev/Build_Documentation/VM&amp;oldid=94837</a>"</div></div>
 <div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a data-href="/wiki/Special:Categories" href="../../Special:Categories.html" title="Special:Categories">Category</a>: <ul><li><a data-href="/wiki/Category:Development" href="../../Category:Development.html" title="Category:Development">Development</a></li></ul></div></div>
 </div>
 </div>
