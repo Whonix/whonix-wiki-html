@@ -275,14 +275,14 @@ CTRL-M
 <div class="tcc-content">
 <p>It is simple to create additional Whonix-Gateway ™ (<code>sys-whonix</code> instances) in <a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>.
 </p><p>Though the procedure is for advanced users who want the security benefit of separate Whonix-Gateway ™ instances in Qubes-Whonix ™. While it affords some protection in the event that other Whonix-Gateway ™ instances are compromised, it will result in a different set of Tor entry guards unless precautions are taken.
-</p><p>Please ensure that the newly created <code>sys-whonix</code> is based on the <code>whonix-gw-17</code> Template and has a distinctive VM name, so it is not confused with other VMs. Additionally, it is recommended <u>not</u> to run multiple Whonix-Gateway ™ instances in parallel, see <a data-href="/wiki/Multiple_Whonix-Gateway#Introduction" href="./Multiple_Whonix-Gateway.html" title="Multiple Whonix-Gateway">Multiple Whonix-Gateway ™</a>.
+</p><p>Please ensure that the newly created <code>sys-whonix</code> is based on the <code>whonix-gateway-17</code> Template and has a distinctive VM name, so it is not confused with other VMs. Additionally, it is recommended <u>not</u> to run multiple Whonix-Gateway ™ instances in parallel, see <a data-href="/wiki/Multiple_Whonix-Gateway#Introduction" href="./Multiple_Whonix-Gateway.html" title="Multiple Whonix-Gateway">Multiple Whonix-Gateway ™</a>.
 </p><p>To create a <a data-href="/wiki/Whonix-Gateway" href="./Whonix-Gateway.html" title="Whonix-Gateway">Whonix-Gateway ™</a> ProxyVM in Qubes:
 </p>
 <ol><li><code>Qubes VM Manager</code> → <code>Qube</code> → <code>Create <u>n</u>ew qube</code></li>
 <li><u>Name and label</u>: Name the ProxyVM. Do not include any personal information; if the ProxyVM is compromised, the attacker could run <code>qubesdb-read /name</code> to reveal its name. Use a generic naming convention, for example: <code>sys-whonix</code>.</li>
 <li><u>Color</u>: Choose a color label for the Whonix-Gateway ™ ProxyVM.</li>
 <li><u>Type</u>: Choose the type <code>AppVM</code>.</li>
-<li><u>Template</u>: Choose Whonix-Gateway ™ Template. For example: <code>whonix-gw-17</code>.</li>
+<li><u>Template</u>: Choose Whonix-Gateway ™ Template. For example: <code>whonix-gateway-17</code>.</li>
 <li><u>Networking</u>: Choose the desired clearnet Service Qube from the list. For example: <code>sys-firewall</code>.</li>
 <li><u>Advanced</u>: Place a <i>check mark</i> in the "provides network" box. This will allow the Whonix-Gateway ™ ProxyVM to provide networking for other App Qubes.</li>
 <li><u>Press</u>: <code>OK</code>.</li>

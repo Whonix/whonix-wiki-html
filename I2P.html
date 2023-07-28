@@ -408,7 +408,7 @@ Security warning: Adding a third party repository and/or installing third-party 
 </p>
 </div>
 <p><b>1.</b> Add the I2P signing key.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: <code>whonix-ws-17-clone-1</code> Template).
+</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: <code>whonix-workstation-17-clone-1</code> Template).
 </p>
 <div class="info-box">
 <p><a class="mw-redirect" data-href="/wiki/Secure_Downloads" href="./Secure_Downloads.html" title="Secure Downloads">Securely download</a> the key.
@@ -416,7 +416,7 @@ Security warning: Adding a third party repository and/or installing third-party 
 <div class="info-box">
 <p><u><b>If</b> you are using Whonix-Workstation ™</u> (<code>anon-whonix</code>), run.
 </p><p><span class="code-select">scurl-download --tlsv1.2 https://geti2p.net/_static/i2p-archive-keyring.gpg</span>
-</p><p><u><b>If</b> you are using a Qubes Template</u> (<code>whonix-ws-17</code>), run. <sup class="reference" id="cite_ref-14"><a href="#cite_note-14">[14]</a></sup> <sup class="reference" id="cite_ref-15"><a href="#cite_note-15">[15]</a></sup>
+</p><p><u><b>If</b> you are using a Qubes Template</u> (<code>whonix-workstation-17</code>), run. <sup class="reference" id="cite_ref-14"><a href="#cite_note-14">[14]</a></sup> <sup class="reference" id="cite_ref-15"><a href="#cite_note-15">[15]</a></sup>
 </p><p><span class="code-select">http_proxy=http://127.0.0.1:8082 https_proxy=http://127.0.0.1:8082 scurl-download --tlsv1.2 https://geti2p.net/_static/i2p-archive-keyring.gpg</span>
 </p>
 </div>
@@ -443,10 +443,10 @@ Digital signatures can increase security but this requires knowledge. Learn more
 </p>
 </div>
 <p><b>2.</b> Add the I2P APT repository.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: <code>whonix-ws-17-clone-1</code> Template).
+</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: <code>whonix-workstation-17-clone-1</code> Template).
 </p><p><span class="code-select">echo "deb [signed-by=/usr/share/keyrings/i2p-archive-keyring.gpg] tor+https://deb.i2p2.de/ $(lsb_release -sc) main" \ | sudo tee /etc/apt/sources.list.d/i2p.list</span>
 </p><p><b>3.</b> I2P installation.
-</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: <code>whonix-ws-17-clone-1</code> Template).
+</p><p>(<a data-href="/wiki/Qubes" href="./Qubes.html" title="Qubes">Qubes-Whonix ™</a>: <code>whonix-workstation-17-clone-1</code> Template).
 </p>
 <div class="info-box">
 <p>Install package(s) <code>i2p i2p-keyring</code>.
@@ -462,8 +462,8 @@ Digital signatures can increase security but this requires knowledge. Learn more
 <p><b>4.</b> Platform specific notices.
 </p>
 <ul><li>Non-Qubes-Whonix: No special notices.</li>
-<li>Qubes-Whonix: Shutdown <code>whonix-ws-17-clone-1</code> Template.</li></ul>
-<p><b>5.</b> Create <code>anon-whonix-I2P</code> based on <code>whonix-ws-17-clone-1</code> Template and Configure <a data-href="/wiki/Tor_Browser" href="./Tor_Browser.html" title="Tor Browser">Tor Browser</a> in <code>anon-whonix-I2P</code> App Qube to allow connections to I2P by following the instructions below.
+<li>Qubes-Whonix: Shutdown <code>whonix-workstation-17-clone-1</code> Template.</li></ul>
+<p><b>5.</b> Create <code>anon-whonix-I2P</code> based on <code>whonix-workstation-17-clone-1</code> Template and Configure <a data-href="/wiki/Tor_Browser" href="./Tor_Browser.html" title="Tor Browser">Tor Browser</a> in <code>anon-whonix-I2P</code> App Qube to allow connections to I2P by following the instructions below.
 </p>
 <div class="info-box">
 <p><u>Note</u>: The following steps will no longer be required once Whonix ™ releases a custom Tor Browser for connecting to alternative networks. <sup class="reference" id="cite_ref-19"><a href="#cite_note-19">[19]</a></sup>
